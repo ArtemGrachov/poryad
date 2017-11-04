@@ -1,0 +1,15 @@
+extends ../templates/page.pug
+
+block variables
+    - var title = "Поряд"
+
+block content
+    .wrapper.wrapper_top
+        include ../layout/header.pug
+    include ../layout/slider-top.pug
+    .wrapper
+        main.main
+            include ../layout/previews.pug
+            include ../layout/details.pug
+            include ../layout/see-also.pug
+        include ../layout/footer.pug

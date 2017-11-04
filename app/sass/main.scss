@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'PlumbRegular';
+    src: url('../fonts/plumb-regular.otf');
+}
+
+@font-face {
+    font-family: 'PlumbCondencedBlack';
+    src: url('../fonts/plumbcondensed-black.otf');
+}
+
+@font-face {
+    font-family: 'PlumbCondencedRegular';
+    src: url('../fonts/plumbcondensed-regular.otf');
+}
+
+@import './_misc/mixins.scss';
+$header-height: 117px;
+$block-border: 1px solid rgba(black,
+.1);
+$orange: #f7b132;
+$html-font-size: 12px;
+$content-width: rem(1170px);
+@import './style.scss';
+@import './tags.scss';
+@import './layout/content.scss';
+@import './layout/footer.scss';
+@import './layout/header.scss';
+@import './blocks/slider.scss';
+@import './layout/slider-top.scss';

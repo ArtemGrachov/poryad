@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+}
+
+.input {
+    font-family: 'PlumbCondencedRegular';
+    &-group {
+        border: $block-border;
+        display: flex;
+        &__input {
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: rem(3.05px);
+            background: none;
+            font-size: rem(15px);
+            padding: rem(5px) rem(10px);
+            width: rem(171px);
+        }
+        &__submit {
+            background: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: rem(28px);
+            border: none;
+            font-size: rem(17px);
+            line-height: 1;
+        }
+        &-icon {
+            fill: transparent;
+            stroke: rgba(black, .2);
+        }
+    }
+}
+
+.btn {
+    font-family: 'PlumbCondencedRegular';
+    text-transform: uppercase;
+    font-size: rem(12px);
+    letter-spacing: rem(2.5px);
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: rem(13px) rem(8px) rem(9px);
+    &_block {
+        display: block;
+        width: 100%;
+    }
+}

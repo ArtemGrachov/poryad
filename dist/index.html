@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Поряд</title>
+    <link rel="stylesheet" href="/css/libs.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper wrapper_top">
+        <header class="header">
+            <div class="header-logo"><img class="header-logo__img" src="./img/logo.svg"></div>
+            <div class="header-right">
+                <form class="header-form">
+                    <div class="input-group"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__submit" type="submit"><svg class="icon input-group-icon"><use xlink:href="img/sprite/sprite.svg#search"></use></svg></button></div>
+                </form>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Підбір проекта</a></li>
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Стан проектів</a></li>
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Новини</a></li>
+                    </ul>
+                </nav>
+                <div class="header-auth">
+                    <div class="header-likes"><button type="button"><3 2</button></div>
+                    <div class="header-auth">
+                        <div class="header-lang"><button type="button">< УК</button></div>
+                        <div class="header-login"><a class="header-login__link" href="#">Увійти</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="slider slider-top">
+        <div class="slider-nav"><a class="slider-nav__btn" href="#">PREV</a><a class="slider-nav__btn" href="#">NEXT</a></div>
+        <ul class="slider-list slider-top-list">
+            <li class="slider-item slider-top-item">
+                <div class="slider-title">Найбільша в Україні біржа добра</div>
+                <div class="slider-subtitle">допомагати просто</div>
+                <div class="slider-bottom">Притулки для тварин</div>
+            </li>
+        </ul>
+    </div><a class="scroll-btn" href="#">\/<svg class="icon input-group-icon"><use xlink:href="img/sprite/sprite.svg#search"></use></svg></a>
+    <div class="wrapper">
+        <main class="main">
+            <div class="block">
+                <sidebar class="filters">
+                    <ul class="filters-list">
+                        <li class="filters-item">
+                            <div class="filters-title">Підбір допомоги</div>
+                            <div class="filter-select"><button class="btn btn__black btn__block" type="button">Прибрати параметри пошуку</button>
+                                <ul class="filters-list">
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="helpFin" /><label class="label-checkbox" for="helpFin">Фінансова</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="helpMat" /><label class="label-checkbox" for="helpMat">Матеріальна</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="helpSrv" /><label class="label-checkbox" for="helpSrv">Послуга</label></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="filters-item">
+                            <ul class="filters-tags">
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="taganimals"><label class="tag-label" for="taganimals">Притулки для тварин</label></li>
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="tageducation"><label class="tag-label" for="tageducation">Освіта</label></li>
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="taginvalids"><label class="tag-label" for="taginvalids">Інваліди</label></li>
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="tagrefugees"><label class="tag-label" for="tagrefugees">Переселенці зони АТО</label></li>
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="tagmilitary"><label class="tag-label" for="tagmilitary">Військові</label></li>
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="tagpensioners"><label class="tag-label" for="tagpensioners">Літні люди</label></li>
+                                <li class="filters-tag"><input class="tag-checkbox" type="checkbox" id="tagkids"><label class="tag-label" for="tagkids">Діти</label></li>
+                            </ul>
+                        </li>
+                        <li class="filters-item">
+                            <div class="filter-dropdown">
+                                <div class="filter-dropdown__label">Впорядкувати</div>
+                                <div class="filter-dropdown__active">Останні додані</div>
+                                <ul class="filter-dropdown-list">
+                                    <li class="filter-dropdown-item"><a class="filter-dropdown__link" href="#">За алфавітом</a></li>
+                                    <li class="filter-dropdown-item"><a class="filter-dropdown__link" href="#">Останні додані</a></li>
+                                    <li class="filter-dropdown-item"><a class="filter-dropdown__link" href="#">Найбільш популярні</a></li>
+                                    <li class="filter-dropdown-item"><a class="filter-dropdown__link" href="#">Найменш популярні</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="filters-item">
+                            <div class="filters-title">Притулки</div>
+                            <div class="filter-select"><button class="btn btn__black btn__block" type="button">Показати всі позиції</button>
+                                <ul class="filters-list">
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterAmeda" /><label class="label-checkbox" for="shelterAmeda">Амеда</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterSirius" /><label class="label-checkbox" for="shelterSirius">Сіріус</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterMyloserdya" /><label class="label-checkbox" for="shelterMyloserdya">Милосердя</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterHromadskaIniciatyva" /><label class="label-checkbox" for="shelterHromadskaIniciatyva">Громадська ініціатива</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterKhvosyILapy" /><label class="label-checkbox" for="shelterKhvosyILapy">Хвости і лапи</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterPanKotsky" /><label class="label-checkbox" for="shelterPanKotsky">Пан Коцький</label></li>
+                                    <li class="filters-item"><input class="input-checkbox" type="checkbox" id="shelterZvirynets" /><label class="label-checkbox" for="shelterZvirynets">Звіринець</label></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </sidebar>
+                <div class="previews">
+                    <div class="previews__title">Притулки для тварин</div>
+                    <ul class="previews-list">
+                        <li class="preview-item">
+                            <div class="preview__pic"><img class="preview__img" src="http://via.placeholder.com/640x480" /><a class="preview__info-link" href="#">INFO</a>
+                                <a class="preview__info-like" href="#">
+                                    <3</a>
+                            </div>
+                            <div class="preview-descr">
+                                <div class="preview-title">Збираємо кошти на харчування тварин</div>
+                                <div class="preview-org">Притулок Сіріус</div>
+                                <div class="preview-accent">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
+                        </li>
+                        <li class="preview-item">
+                            <div class="preview__pic"><img class="preview__img" src="http://via.placeholder.com/640x480" /><a class="preview__info-link" href="#">INFO</a>
+                                <a class="preview__info-like" href="#">
+                                    <3</a>
+                            </div>
+                            <div class="preview-descr">
+                                <div class="preview-title">Необхідно провести вакцинацію собак</div>
+                                <div class="preview-org">Притулок Сіріус</div>
+                                <div class="preview-accent">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
+                        </li>
+                        <li class="preview-item">
+                            <div class="preview__pic"><img class="preview__img" src="http://via.placeholder.com/640x480" /><a class="preview__info-link" href="#">INFO</a>
+                                <a class="preview__info-like" href="#">
+                                    <3</a>
+                            </div>
+                            <div class="preview-descr">
+                                <div class="preview-title">Потірбні кошти на лікування Шаріка</div>
+                                <div class="preview-org">Притулок Амеда</div>
+                                <div class="preview-accent">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
+                        </li>
+                        <li class="preview-item">
+                            <div class="preview__pic"><img class="preview__img" src="http://via.placeholder.com/640x480" /><a class="preview__info-link" href="#">INFO</a>
+                                <a class="preview__info-like" href="#">
+                                    <3</a>
+                            </div>
+                            <div class="preview-descr">
+                                <div class="preview-title">Допоможіть Мурчику на потез задньої лапи</div>
+                                <div class="preview-org">Притулок Милосердя</div>
+                                <div class="preview-accent">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
+                        </li>
+                        <li class="preview-item">
+                            <div class="preview__pic"><img class="preview__img" src="http://via.placeholder.com/640x480" /><a class="preview__info-link" href="#">INFO</a>
+                                <a class="preview__info-like" href="#">
+                                    <3</a>
+                            </div>
+                            <div class="preview-descr">
+                                <div class="preview-title">Збираємо кошти для благоустрою м. Київ</div>
+                                <div class="preview-org">Громадська ініціатива</div>
+                                <div class="preview-accent">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
+                        </li>
+                        <li class="preview-item">
+                            <div class="preview__pic"><img class="preview__img" src="http://via.placeholder.com/640x480" /><a class="preview__info-link" href="#">INFO</a>
+                                <a class="preview__info-like" href="#">
+                                    <3</a>
+                            </div>
+                            <div class="preview-descr">
+                                <div class="preview-title">Збираємо на харчування собак</div>
+                                <div class="preview-org">Притулок Хвости і лапи</div>
+                                <div class="preview-accent">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
+                        </li>
+                    </ul>
+                    <div class="preview-more"><button class="preview-more__btn" type="button">Показати більше позицій</button></div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="details details_left">
+                    <div class="slider slider_details">
+                        <div class="slider-nav"><a class="slider-nav__btn" href="#">PREV</a><a class="slider-nav__btn" href="#">NEXT</a>
+                            <a class="slider-nav__like" href="#">
+                                <3</a>
+                        </div>
+                        <ul class="slider-list">
+                            <li class="slider-item">
+                                <div class="details-slider__pic"><img class="details-slider__img" src="http://via.placeholder.com/512x512"><img class="details-slider__logo" src="http://via.placeholder.com/128x128"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="title">Збираємо кошти на харчування тварин #Дай5!</div>
+                    <div class="accent">Притулок Сіріус</div>
+                    <div class="details__desc">
+                        <p>Що можна купити на 5 гривень? Більше, ніж ти думаєш – цілий день ситого життя для одного безпритульного собаки! Ми знову запускаємо естафету #ДАЙ5 і закликаємо всіх підтримати понад дві тисячі вихованців найбільшого в Україні притулку
+                            для тварин "Сіріус"</p>
+                        <p>Що можна купити на 5 гривень? Більше, ніж ти думаєш – цілий день ситого життя для одного безпритульного собаки! Ми знову запускаємо естафету #ДАЙ5 і закликаємо всіх підтримати понад дві тисячі вихованців найбільшого в Україні притулку
+                            для тварин "Сіріус"</p>
+                        <p>Також можна налаштувати регулярний платіж і годувати хвостів на постійній основі. Як це зробити, дивись тут: нgoo.gl/cYzT3Y</p>
+                    </div>
+                </div>
+                <div class="details details_right">
+                    <div class="title">Притулок Сіріус</div>
+                    <ul class="details-contacts-list">
+                        <li class="details-contacts-item">тел: 067 123 45 67</li>
+                        <li class="details-contacts-item">
+                            <ul class="details-socials-list">
+                                <li class="details-socials-item"><a href="#">F</a></li>
+                                <li class="details-socials-item"><a href="#">VK</a></li>
+                            </ul>
+                        </li>
+                        <li class="details-contacts-item"><a class="details-contacts__link" href="http://www.dogcat.com.ua"></a></li>
+                        <li class="details-contacts-item">
+                            <p>Україна, Київська область, село Федорівка</p>
+                            <div class="details-contacts-map"></div>
+                        </li>
+                        <li class="details-contacts-item"><a class="details-contacts__link title" href="#">Переглянути інші проекти організації</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <ul class="see-also-list">
+                    <li class="see-also-item">
+                        <a class="see-also-link" href="#">
+                            <div class="see-also__pic"><img class="see-also__img" src="http://via.placeholder.com/128x128" /></div>
+                            <div class="see-also__title">Волонтерство вихідного дня</div>
+                        </a>
+                    </li>
+                    <li class="see-also-item">
+                        <a class="see-also-link" href="#">
+                            <div class="see-also__pic"><img class="see-also__img" src="http://via.placeholder.com/128x128" /></div>
+                            <div class="see-also__title">Чапік шукає даму серця</div>
+                        </a>
+                    </li>
+                    <li class="see-also-item">
+                        <a class="see-also-link" href="#">
+                            <div class="see-also__pic"><img class="see-also__img" src="http://via.placeholder.com/128x128" /></div>
+                            <div class="see-also__title">Нам потрібен старий посуд та підстилки</div>
+                        </a>
+                    </li>
+                    <li class="see-also-item">
+                        <a class="see-also-link" href="#">
+                            <div class="see-also__pic"><img class="see-also__img" src="http://via.placeholder.com/128x128" /></div>
+                            <div class="see-also__title">Я Інжир і мені потрібен дім на тиждень</div>
+                        </a>
+                    </li>
+                    <li class="see-also-item">
+                        <a class="see-also-link" href="#">
+                            <div class="see-also__pic"><img class="see-also__img" src="http://via.placeholder.com/128x128" /></div>
+                            <div class="see-also__title">Ми вже два місяці як готові дарувати Вам щастя</div>
+                        </a>
+                    </li>
+                    <li class="see-also-item">
+                        <a class="see-also-link" href="#">
+                            <div class="see-also__pic"><img class="see-also__img" src="http://via.placeholder.com/128x128" /></div>
+                            <div class="see-also__title">Шукаємо сторожа в притулок</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-left">
+                <form>
+                    <div class="title">З питань розміщення проектів заповність форму</div><button class="btn btn_block btn_black" type="submit"></button><input class="input" type="text" placeholder="Ім'я" id="prFirstname"><input class="input" type="text" placeholder="Прізвище"
+                        id="prLastname"><input class="input" type="email" placeholder="E-mail" id="prEmail"><textarea class="textarea" row="10" placeholder="Текст" id="prText"></textarea>
+                    <p>Всі поля заповняти обов'язково</p>
+                </form>
+            </div>
+            <div class="footer-center">
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item">
+                        <dl class="footer-contacts-dl"><dt class="footer-contacts-dt">Телефон</dt>
+                            <dd class="footer-contacts-dd">063 456 78 90</dd>
+                        </dl>
+                        <dl class="footer-contacts-dl"><dt class="footer-contacts-dt">E-mail</dt>
+                            <dd class="footer-contacts-dd">info@porjad.gmail.com</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <form><label for="subEmail">Підпишіть і отримуйте новини про нові проекти та активність у вашому кабінеті</label><input class="input input-trnsp" type="email" placeholder="E-mail"><button class="btn btn-black" type="submit">Підписатися</button></form>
+            </div>
+            <div class="footer-right">
+                <div class="title">Приєднуйтесь до нас у соціальних мережах</div>
+                <ul class="footer-socials-list">
+                    <li class="footer-socials-item"><a href="#">facebook</a></li>
+                    <li class="footer-socials-item"><a href="#">vkontakte</a></li>
+                    <li class="footer-socials-item"><a href="#">google+</a></li>
+                    <li class="footer-socials-item"><a href="#">instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+html {
+    font-size: $html-font-size;
+}
+
+body {
+    font-family: 'PlumbRegular';
+    line-height: 1.3;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: $content-width;
+    border-left: $block-border;
+    border-right: $block-border;
+    &_top {
+        border: none;
+    }
+}
+
+.block {
+    border-bottom: $block-border;
+}
+
+.scroll-btn {
+    position: absolute;
+}
