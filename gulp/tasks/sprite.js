@@ -22,6 +22,6 @@ module.exports = function() {
                     }
                 }
             }))
-            .pipe($.gulp.dest($.cfg.dist + 'img/sprite'))
+            .pipe($.gulp.dest($.cfg.dist + 'img/'))
     })
 }

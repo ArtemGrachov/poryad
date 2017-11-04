@@ -15,15 +15,14 @@
 
 @import './_misc/mixins.scss';
 $header-height: 117px;
-$block-border: 1px solid rgba(black,
-.1);
+$border: 1px solid rgba(black,
+.2);
+$border-btn: 1px solid #bcbcbc;
 $orange: #f7b132;
+$red: #bf303e;
+$grey: #9c9c9c;
 $html-font-size: 12px;
-$content-width: rem(1170px);
+$wrapper: rem(1170px);
+$transition: 200ms;
 @import './style.scss';
 @import './tags.scss';
-@import './layout/content.scss';
-@import './layout/footer.scss';
-@import './layout/header.scss';
-@import './blocks/slider.scss';
-@import './layout/slider-top.scss';

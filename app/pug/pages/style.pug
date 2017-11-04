@@ -1,0 +1,57 @@
+extends ../templates/page.pug
+
+block variables
+    - var title = "Поряд"
+
+block content
+    .wrapper
+        h1 Ex labore duis eiusmod ipsum minim.
+        h2 Laboris dolore non consectetur irure amet excepteur aute nulla.
+        h3 Duis cillum et fugiat incididunt id deserunt sint culpa veniam fugiat.
+        h4 Duis cillum et fugiat incididunt id deserunt sint culpa veniam fugiat.
+        h5 Duis cillum et fugiat incididunt id deserunt sint culpa veniam fugiat.
+        h6 Duis cillum et fugiat incididunt id deserunt sint culpa veniam fugiat.
+
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est temporibus reiciendis dolorem ratione ut porro provident perferendis unde, commodi, optio architecto natus in tempore officiis voluptatibus fugiat ducimus animi a?
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, sapiente. Itaque quibusdam, quia natus optio consectetur omnis commodi neque cum culpa, atque cumque, dolorem quo qui assumenda exercitationem ad eum.
+
+        .title Притулки для тварин
+
+        button(type="button").btn Допомогти
+        hr
+        button(type="button").btn.btn_dark Підписатися
+        hr
+        button(type="button").btn.btn_dark.btn_block Показати всі позиції
+
+        .accent сума необмежена
+        hr
+        ul(style="list-style:none;padding:0;margin:0")
+            li
+                input(type="checkbox" id="test")
+                label(for="test") Фінансова
+            li
+                input(type="checkbox" id="test2")
+                label(for="test2") Матеріальна
+        hr
+        a(href="http://sheltersirius.org") http://sheltersirius.org
+        hr
+        a(href="#").btn-square INFO
+        hr
+        +icon('heart','')
+        hr
+        p Що можна купити на 5 гривень? Більше, ніж ти думаєш – цілий день ситого життя для одного безпритульного собаки! Ми знову запускаємо естафету #ДАЙ5 і закликаємо всіх підтримати понад дві тисячі вихованців найбільшого в Україні притулку для тварин "Сіріус"
+        hr
+        input(type="text" placeholder="E-mail").input
+        hr
+        div(style="background:#f7b132;padding:20px;")
+            .input-group
+                input(type="text" placeholder="Назва проекта").input.input-group__input
+                button(type="submit").input-group__button
+                    +icon('search','input-group__icon')
+            hr
+            form.form
+                button(type="submit").btn.btn_dark.btn_block Відправити
+                input(type="text" placeholder="Ім'я").input
+                input(type="text" placeholder="Прізвище").input
+                input(type="text" placeholder="E-mail").input
+                textarea(rows="5" placeholder="Текст").input

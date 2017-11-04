@@ -1,55 +1,109 @@
-a {
-    text-decoration: none;
-}
-
-.icon {
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-}
-
-.input {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'PlumbCondencedRegular';
-    &-group {
-        border: $block-border;
-        display: flex;
-        &__input {
-            border: none;
-            text-transform: uppercase;
-            letter-spacing: rem(3.05px);
-            background: none;
-            font-size: rem(15px);
-            padding: rem(5px) rem(10px);
-            width: rem(171px);
-        }
-        &__submit {
-            background: none;
+    text-transform: uppercase;
+    letter-spacing: rem(2.4px);
+}
+
+a,
+input,
+button {
+    transition: $transition;
+}
+
+a {
+    color: $red;
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+    &+label {
+        display: block;
+        font-family: 'PlumbCondencedRegular';
+        text-transform: uppercase;
+        letter-spacing: rem(2.45px);
+        color: $grey;
+        margin-bottom: rem(21px);
+        transition: $transition;
+        &:before {
+            content: '';
+            margin-right: rem(36px);
+            transition: $transition;
+            font-size: 10px;
+            display: inline-block;
+            width: rem(29px);
+            height: rem(29px);
+            vertical-align: middle;
+            background-color: $orange;
             background-repeat: no-repeat;
             background-position: center;
-            width: rem(28px);
-            border: none;
-            font-size: rem(17px);
-            line-height: 1;
         }
-        &-icon {
-            fill: transparent;
-            stroke: rgba(black, .2);
+    }
+    &:checked+label {
+        color: black;
+        &:before {
+            background-image: url('../img/icons/heart.png');
         }
     }
 }
 
-.btn {
-    font-family: 'PlumbCondencedRegular';
-    text-transform: uppercase;
-    font-size: rem(12px);
-    letter-spacing: rem(2.5px);
-    background: black;
-    color: white;
-    border: none;
-    font-weight: bold;
-    padding: rem(13px) rem(8px) rem(9px);
-    &_block {
+.form {
+    width: rem(256px);
+    background: white;
+    border: $border;
+    .input {
+        border-left: none;
+        border-right: none;
+        border-top: none;
         display: block;
         width: 100%;
+    }
+}
+
+.input {
+    font-family: 'PlumbCondencedRegular';
+    background: none;
+    width: rem(160px);
+    border: $border;
+    padding: rem(9px) rem(9px) rem(7px);
+    letter-spacing: rem(2.5px);
+    &::placeholder {
+        color: black;
+    }
+    &-group {
+        border: $border;
+        display: inline-block;
+        &__input {
+            vertical-align: middle;
+            display: inline-block;
+            border: none;
+            text-transform: uppercase;
+            padding: rem(5px) rem(10px);
+            font-size: rem(15px);
+            letter-spacing: rem(3px);
+            width: rem(173px);
+        }
+        &__button {
+            background: none;
+            border: none;
+            font-size: rem(17px);
+            padding: 0;
+            vertical-align: middle;
+            line-height: 1;
+            padding: rem(5px) rem(5px) rem(2px);
+        }
+        &__icon {
+            fill: none;
+            stroke: #333233;
+        }
     }
 }
