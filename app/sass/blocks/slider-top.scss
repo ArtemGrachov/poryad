@@ -1,0 +1,8 @@
+.slider-top {
+    &-wrapper {
+        background: $orange;
+        height: 300px;
+        margin-top: -$header-height;
+        opacity: .3;
+    }
+}

@@ -1,0 +1,25 @@
+.footer {
+    width: $wrapper;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 rem(30px);
+    border-left: $border;
+    border-right: $border;
+    &-wrapper {
+        width: 100%;
+        background-image: url('../img/layout/footer.png');
+        background-size: cover;
+        height: rem(558px);
+    }
+    &-block {
+        margin-left: (30px);
+        padding-top: rem(160px);
+        outline: 1px dashed lime;
+        width: 100%;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

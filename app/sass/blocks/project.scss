@@ -1,0 +1,19 @@
+.project {
+    outline: 1px solid blue;
+    display: flex;
+    @extend %clearfix;
+    &-left {
+        outline: 1px solid red;
+        width: rem(445px);
+        flex-shrink: 0;
+    }
+    &-center {
+        outline: 1px solid green;
+        margin: 0 rem(30px);
+    }
+    &-right {
+        outline: 1px solid lime;
+        width: rem(300px);
+        flex-shrink: 0;
+    }
+}
