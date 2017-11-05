@@ -36,7 +36,7 @@ input[type="checkbox"] {
         transition: $transition;
         &:before {
             content: '';
-            margin-right: rem(36px);
+            margin-right: rem(35px);
             transition: $transition;
             font-size: 10px;
             display: inline-block;

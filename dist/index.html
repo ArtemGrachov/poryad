@@ -10,46 +10,68 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header-logo"><img src="./img/logo.png"></div>
-            <div class="header-right">
-                <div class="header-search">
-                    <div class="input-group header-search-input"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__button" type="submit"><svg class="icon input-group__icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></div>
-                </div>
-                <nav class="header-nav">
-                    <ul class="header-nav-list">
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Підбір проекта</a></li>
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Стан проектів</a></li>
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Новини</a></li>
-                    </ul>
-                </nav>
-                <div class="header-user">
-                    <div class="header-like"><svg class="icon header-like__icon"><use xlink:href="img/sprite.svg#heart"></use></svg><span class="header-like__counter">2</span></div>
-                    <div class="header-auth">
-                        <div class="header-lang">
-                            <div class="dropdown header-dropdown"><button class="dropdown__btn header-dropdown__btn" type="button"><svg class="icon header-dropdown__btn-icon"><use xlink:href="img/sprite.svg#triangle"></use></svg>УК</button>
-                                <ul class="dropdown-list header-dropdown-list">
-                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">УК</a></li>
-                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">ENG</a></li>
-                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">РУС</a></li>
-                                </ul>
-                            </div>
+    <header class="header">
+        <div class="header-logo"><img src="./img/logo.png"></div>
+        <div class="header-right">
+            <div class="header-search">
+                <div class="input-group header-search-input"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__button" type="submit"><svg class="icon input-group__icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></div>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Підбір проекта</a></li>
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Стан проектів</a></li>
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Новини</a></li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <div class="header-like"><svg class="icon header-like__icon"><use xlink:href="img/sprite.svg#heart"></use></svg><span class="header-like__counter">2</span></div>
+                <div class="header-auth">
+                    <div class="header-lang">
+                        <div class="dropdown header-dropdown"><button class="dropdown__btn header-dropdown__btn" type="button"><svg class="icon header-dropdown__btn-icon"><use xlink:href="img/sprite.svg#triangle"></use></svg>УК</button>
+                            <ul class="dropdown-list header-dropdown-list">
+                                <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">УК</a></li>
+                                <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">ENG</a></li>
+                                <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">РУС</a></li>
+                            </ul>
                         </div>
-                        <div class="header-login"><button class="header-login__btn" type="button"><svg class="icon header-login__btn-icon"><use xlink:href="img/sprite.svg#login"></use></svg><div class="header-login__btn-text">УВІЙТИ</div></button></div>
                     </div>
+                    <div class="header-login"><button class="header-login__btn" type="button"><svg class="icon header-login__btn-icon"><use xlink:href="img/sprite.svg#login"></use></svg><div class="header-login__btn-text">УВІЙТИ</div></button></div>
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <div class="slider-top-wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum facere ratione, culpa voluptatem esse magni consequatur deleniti voluptatum beatae. Fuga hic officiis similique excepturi impedit labore, odit omnis blanditiis.</div>
     <div class="wrapper">
-        <div class="previews">
-            <div class="filters">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit explicabo quae magnam eligendi repellat doloremque laudantium sapiente deserunt velit ullam exercitationem eius iusto, libero totam sunt repudiandae. Hic, magnam?</div>
-            <div
-                class="positions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem incidunt unde minima facere voluptas sint doloremque deserunt, distinctio in, voluptatibus neque asperiores molestiae provident magnam, nam consequuntur corporis deleniti.</div>
-    </div>
+        <aside class="filters">
+            <div class="filters-list">
+                <li class="filters-item">
+                    <div class="title">Підбір допомоги</div>
+                    <div class="filters-checkbox"><button class="btn btn_block btn_dark" type="button">Прибрати параметри пошуку</button>
+                        <ul class="filters-checkbox-list">
+                            <li class="filters-checkbox-item"><input type="checkbox" id="helpFin" /><label for="helpFin">Фінансова</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="helpMat" /><label for="helpMat">Матеріальна</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="helpServ" /><label for="helpServ">Послуга</label></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="filters-item">
+                    <div class="title">Притулки</div>
+                    <div class="filters-checkbox"><button class="btn btn_block btn_dark" type="button">Показати всі позиції</button>
+                        <ul class="filters-checkbox-list">
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterAmeda" /><label for="shelterAmeda">Амеда</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterSirius" /><label for="shelterSirius">Сіріус</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterMyloserdya" /><label for="shelterMyloserdya">Милосердя</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterHromadskaInitsiatyva" /><label for="shelterHromadskaInitsiatyva">Громадська ініціатива</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterKhvostyILapy" /><label for="shelterKhvostyILapy">Хвости і лапи</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterPanKotsky" /><label for="shelterPanKotsky">Пан Коцький</label></li>
+                            <li class="filters-checkbox-item"><input type="checkbox" id="shelterZvirynets" /><label for="shelterZvirynets">Звіринець</label></li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+        </aside>
+        <div class="positions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem incidunt unde minima facere voluptas sint doloremque deserunt, distinctio in, voluptatibus neque asperiores molestiae provident magnam, nam consequuntur corporis deleniti.</div>
     </div>
     <div class="wrapper">
         <div class="project">

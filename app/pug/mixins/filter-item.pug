@@ -1,0 +1,10 @@
+mixin filter-item(title, button, prefix, list)
+    li.filters-item
+        .title #{title}
+        .filters-checkbox
+            button(type="button").btn.btn_block.btn_dark #{button}
+            ul.filters-checkbox-list
+                each checkbox in list
+                    li.filters-checkbox-item
+                        input(type="checkbox" id=prefix + checkbox.id)
+                        label(for=prefix + checkbox.id) #{checkbox.text}

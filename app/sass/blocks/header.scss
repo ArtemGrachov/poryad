@@ -1,5 +1,10 @@
 .header {
     height: $header-height;
+    border-left: $border;
+    border-right: $border;
+    border-bottom: $border;
+    width: $wrapper;
+    margin: 0 auto;
     &-right {
         float: right;
         height: 100%;

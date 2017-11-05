@@ -1,5 +1,17 @@
 .filters {
-    color: red;
-    width: rem(255px);
+    width: rem(256px);
     float: left;
+    &-list {
+        @extend %list;
+    }
+    &-checkbox {
+        border: $border;
+    }
+    &-checkbox {
+        &-list {
+            padding-top: rem(30px);
+            padding-bottom: rem(7px);
+            @extend %list;
+        }
+    }
 }
