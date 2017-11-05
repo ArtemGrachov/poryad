@@ -1,0 +1,7 @@
+mixin filters-tags(tags)
+    .filters-item
+        ul.filters-tags-list
+            each tag in tags
+                li.filters-tags-item
+                    input(type="checkbox" id="tag" + tag.id).filters-tags__checkbox
+                    label(for="tag"+tag.id) #{tag.name}

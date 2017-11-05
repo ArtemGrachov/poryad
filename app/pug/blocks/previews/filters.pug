@@ -1,4 +1,14 @@
 aside.filters
     .filters-list
-        +filter-item('Підбір допомоги','Прибрати параметри пошуку','help',[{id:'Fin',text:'Фінансова'},{id:'Mat',text:'Матеріальна'},{id:'Serv',text:'Послуга'}])
-        +filter-item('Притулки','Показати всі позиції','shelter',[{id:'Ameda',text:'Амеда'},{id:'Sirius',text:'Сіріус'},{id:'Myloserdya',text:'Милосердя'},{id:'HromadskaInitsiatyva',text:'Громадська ініціатива'},{id:'KhvostyILapy',text:'Хвости і лапи'},{id:'PanKotsky',text:'Пан Коцький'},{id:'Zvirynets',text:'Звіринець'}])
+        +filters-item('Підбір допомоги','Прибрати параметри пошуку','help',[{id:'Fin',text:'Фінансова'},{id:'Mat',text:'Матеріальна'},{id:'Serv',text:'Послуга'}])
+        +filters-tags([{id:'Animals',name:'Притулки для тварин'},{id:'Education',name:'Освіта'},{id:'Invalids',name:'Інваліди'},{id:'Refugees',name:'Переселенці зони АТО'},{id:'Military',name:'Військові'},{id:'Pensioners',name:'Літні люди'},{id:'Children',name:'Діти'}])
+        .filters-item
+            .dropdown.filters-dropdown
+                button(type="button").dropdown__btn.filters-dropdown__btn Впорядкувати
+                +icon('more','filters-dropdown__icon')
+                .filters-dropdown__current Останні додані
+                ul.dropdown-list.filters-dropdown-list
+                    each sort in ['Останні додані','Найпопулярніші','За алфавітом']
+                        li.dropdown-item.filters-dropdown-item
+                            a.dropdown__link.filters-dropdown__link #{sort}
+        +filters-item('Притулки','Показати всі позиції','shelter',[{id:'Ameda',text:'Амеда'},{id:'Sirius',text:'Сіріус'},{id:'Myloserdya',text:'Милосердя'},{id:'HromadskaInitsiatyva',text:'Громадська ініціатива'},{id:'KhvostyILapy',text:'Хвости і лапи'},{id:'PanKotsky',text:'Пан Коцький'},{id:'Zvirynets',text:'Звіринець'}])

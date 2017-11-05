@@ -4,6 +4,9 @@
     &-list {
         @extend %list;
     }
+    &-item {
+        margin-bottom: rem(59px);
+    }
     &-checkbox {
         border: $border;
     }
@@ -12,6 +15,58 @@
             padding-top: rem(30px);
             padding-bottom: rem(7px);
             @extend %list;
+        }
+    }
+    &-tags {
+        &-list {
+            @extend %list;
+            letter-spacing: rem(4px);
+            margin-bottom: rem(-11px);
+        }
+        &-item {
+            display: inline-block;
+            margin-bottom: rem(9px);
+        }
+        &__checkbox {
+            &+label {
+                @extend .btn;
+                margin-bottom: 0 !important; // ???
+                padding-bottom: rem(9px);
+                &:before {
+                    display: none !important; // ???
+                }
+            }
+            &:checked+label {
+                background: $orange;
+            }
+        }
+    }
+    &-dropdown {
+        padding-bottom: rem(3px);
+        &__btn {
+            border: none;
+            background: none;
+            font-family: 'PlumbCondencedRegular';
+            text-transform: uppercase;
+            letter-spacing: rem(2.4px);
+            padding: 0 rem(1px);
+            vertical-align: middle;
+            margin-right: rem(6px);
+        }
+        &__current {
+            display: inline-block;
+            font-family: 'PlumbCondencedRegular';
+            text-transform: uppercase;
+            letter-spacing: rem(2.4px);
+            vertical-align: middle;
+        }
+        &__icon {
+            font-size: rem(22px);
+            vertical-align: middle;
+        }
+        &-list {
+            @extend %list;
+            display: none;
         }
     }
 }
