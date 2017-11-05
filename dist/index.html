@@ -11,8 +11,36 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">header
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis officia placeat itaque ab laudantium architecto iste magni. Ipsam veritatis voluptate pariatur omnis quasi, odit, saepe maxime, dolorum iure esse cumque.</p>
+        <header class="header">
+            <div class="header-logo"><img src="./img/logo.png"></div>
+            <div class="header-right">
+                <div class="header-search">
+                    <div class="input-group header-search-input"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__button" type="submit"><svg class="icon input-group__icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></div>
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Підбір проекта</a></li>
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Стан проектів</a></li>
+                        <li class="header-nav-item"><a class="header-nav__link" href="#">Новини</a></li>
+                    </ul>
+                </nav>
+                <div class="header-user">
+                    <div class="header-like"><svg class="icon header-like__icon"><use xlink:href="img/sprite.svg#heart"></use></svg><span class="header-like__counter">2</span></div>
+                    <div class="header-auth">
+                        <div class="header-lang">
+                            <div class="dropdown header-dropdown"><button class="dropdown__btn header-dropdown__btn" type="button"><svg class="icon header-dropdown__btn-icon"><use xlink:href="img/sprite.svg#triangle"></use></svg>УК</button>
+                                <ul class="dropdown-list header-dropdown-list">
+                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">УК</a></li>
+                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">ENG</a></li>
+                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">РУС</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-login"><button class="header-login__btn" type="button"><svg class="icon header-login__btn-icon"><use xlink:href="img/sprite.svg#login"></use></svg><div class="header-login__btn-text">УВІЙТИ</div></button></div>
+                    </div>
+                </div>
+            </div>
         </header>
     </div>
     <div class="slider-top-wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum facere ratione, culpa voluptatem esse magni consequatur deleniti voluptatum beatae. Fuga hic officiis similique excepturi impedit labore, odit omnis blanditiis.</div>
@@ -22,22 +50,26 @@
             <div
                 class="positions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem incidunt unde minima facere voluptas sint doloremque deserunt, distinctio in, voluptatibus neque asperiores molestiae provident magnam, nam consequuntur corporis deleniti.</div>
     </div>
-    <div class="project">
-        <div class="project-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora soluta, perferendis quod ab inventore aut mollitia vel corrupti porro, saepe ipsum doloremque unde aperiam sed cumque? Perferendis, praesentium in! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quo blanditiis aspernatur iure officia! Quidem consequatur magni placeat libero ratione, aliquam corrupti asperiores, suscipit ducimus fugiat fugit itaque optio aspernatur deserunt! Lorem ipsum dolor sit
-            amet consectetur, adipisicing elit. Doloremque accusantium sequi sapiente perferendis iure assumenda aliquid cum mollitia blanditiis aut? Qui ad corrupti eius consectetur incidunt. Ea esse fugiat eum!</div>
-        <div class="project-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ab quidem illum provident labore a est ea architecto consequuntur dolores beatae, enim mollitia repudiandae. Accusamus, quos? Quo, praesentium? Qui, quod. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Commodi nulla natus libero delectus minima exercitationem unde debitis, perferendis quisquam perspiciatis alias eveniet officiis non omnis accusamus voluptatibus modi, pariatur labore. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Assumenda vel odit distinctio, explicabo iure eaque veniam totam velit ullam perspiciatis. Facilis fugit rem maiores voluptatem! Quasi omnis nisi atque ab?</div>
-        <div class="project-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo odio deleniti hic sit maxime asperiores fugiat saepe aut sed quaerat ut in magni nihil soluta quisquam, magnam, laudantium voluptates ad! Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Similique rerum libero voluptas tempore, in sunt porro itaque veniam ex iure. Cum aspernatur eos fugiat iste doloribus ab soluta! Voluptatum, neque.</div>
     </div>
-    <div class="deals">DEALS</div>
+    <div class="wrapper">
+        <div class="project">
+            <div class="project-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora soluta, perferendis quod ab inventore aut mollitia vel corrupti porro, saepe ipsum doloremque unde aperiam sed cumque? Perferendis, praesentium in! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quo blanditiis aspernatur iure officia! Quidem consequatur magni placeat libero ratione, aliquam corrupti asperiores, suscipit ducimus fugiat fugit itaque optio aspernatur deserunt! Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Doloremque accusantium sequi sapiente perferendis iure assumenda aliquid cum mollitia blanditiis aut? Qui ad corrupti eius consectetur incidunt. Ea esse fugiat eum!</div>
+            <div class="project-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ab quidem illum provident labore a est ea architecto consequuntur dolores beatae, enim mollitia repudiandae. Accusamus, quos? Quo, praesentium? Qui, quod. Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Commodi nulla natus libero delectus minima exercitationem unde debitis, perferendis quisquam perspiciatis alias eveniet officiis non omnis accusamus voluptatibus modi, pariatur labore. Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Assumenda vel odit distinctio, explicabo iure eaque veniam totam velit ullam perspiciatis. Facilis fugit rem maiores voluptatem! Quasi omnis nisi atque ab?</div>
+            <div class="project-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo odio deleniti hic sit maxime asperiores fugiat saepe aut sed quaerat ut in magni nihil soluta quisquam, magnam, laudantium voluptates ad! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Similique rerum libero voluptas tempore, in sunt porro itaque veniam ex iure. Cum aspernatur eos fugiat iste doloribus ab soluta! Voluptatum, neque.</div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="deals">DEALS</div>
     </div>
     <div class="footer-wrapper">
         <footer class="footer">
             <div class="footer-block">left</div>
-            <div class="footer-block">right</div>
+            <div class="footer-block footer-block_center">right</div>
             <div class="footer-block">center</div>
         </footer>
     </div>

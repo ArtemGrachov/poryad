@@ -22,6 +22,12 @@
     clear: both;
 }
 
+.header-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 html {
     font-size: 12px;
 }
@@ -45,8 +51,9 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 2.5rem;
     width: 97.5rem;
+    padding: 0 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -233,7 +240,7 @@ input[type="checkbox"]:checked + label:before {
     padding: 0.41667rem 0.83333rem;
     font-size: 1.25rem;
     letter-spacing: 0.25rem;
-    width: 14.41667rem;
+    width: 14.33333rem;
 }
 
 .input-group__button {
@@ -252,7 +259,166 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .header {
-    height: 117px;
+    height: 116px;
+}
+
+.header-right {
+    float: right;
+    height: 100%;
+}
+
+.header-logo {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-logo:before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    width: 0;
+    vertical-align: bottom;
+}
+
+.header-logo__img {
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.header-search {
+    height: 100%;
+    padding: 1.5rem 1.25rem;
+    float: left;
+    line-height: 1;
+}
+
+.header-search:before {
+    height: 100%;
+    width: 0;
+    content: '';
+    display: inline-block;
+}
+
+.header-search-input {
+    vertical-align: bottom;
+}
+
+.header-nav {
+    float: left;
+    height: 100%;
+}
+
+.header-nav-list {
+    height: 100%;
+}
+
+.header-nav-item {
+    display: block;
+    float: left;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-nav-item:first-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-nav__link {
+    height: 100%;
+    color: black;
+    font-family: 'PlumbCondencedRegular';
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    display: block;
+    padding: 2.16667rem 1.08333rem 2.16667rem 1rem;
+    vertical-align: bottom;
+    letter-spacing: 0.25rem;
+}
+
+.header-nav__link:before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    width: 0;
+}
+
+.header-user {
+    float: left;
+    height: 100%;
+    padding-bottom: 1.58333rem;
+    margin-left: 1.16667rem;
+    margin-right: 0.16667rem;
+}
+
+.header-user:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: bottom;
+}
+
+.header-like {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 2.16667rem;
+}
+
+.header-like__counter {
+    color: white;
+    font-family: 'PlumbCondencedRegular';
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.header-like__icon {
+    font-size: 2.16667rem;
+    vertical-align: middle;
+    margin-right: 0.08333rem;
+}
+
+.header-auth {
+    display: inline-block;
+}
+
+.header-dropdown {
+    margin-bottom: 0.66667rem;
+}
+
+.header-dropdown-list {
+    display: none;
+}
+
+.header-dropdown__btn {
+    border: none;
+    background: none;
+    font-size: 1.16667rem;
+    display: block;
+    width: 100%;
+}
+
+.header-dropdown__btn-icon {
+    margin-right: 0.41667rem;
+    font-size: 0.91667rem;
+}
+
+.header-login__btn {
+    text-align: center;
+    background: none;
+    border: none;
+    font-family: 'PlumbCondencedRegular';
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 0.16667rem;
+}
+
+.header-login__btn-icon {
+    fill: none;
+    stroke: black;
+    font-size: 2.5rem;
+    margin-bottom: 0.16667rem;
 }
 
 .footer {
@@ -266,7 +432,6 @@ input[type="checkbox"]:checked + label:before {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding: 0 2.5rem;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -279,21 +444,22 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .footer-block {
-    margin-left: 30px;
-    padding-top: 13.33333rem;
-    outline: 1px dashed lime;
+    padding: 13.33333rem 2.5rem 0;
     width: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .footer-block:first-child {
-    margin-left: 0;
+    border-left: none;
 }
 
 .slider-top-wrapper {
     background: #f7b132;
     height: 300px;
     margin-top: -117px;
-    opacity: .3;
+    padding-top: 116px;
+    z-index: -1;
+    position: relative;
 }
 
 .filters {

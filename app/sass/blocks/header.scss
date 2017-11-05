@@ -1,3 +1,141 @@
 .header {
     height: $header-height;
+    &-right {
+        float: right;
+        height: 100%;
+    }
+    &-logo {
+        float: left;
+        height: 100%;
+        overflow: hidden;
+        &:before {
+            display: inline-block;
+            content: '';
+            height: 100%;
+            width: 0;
+            vertical-align: bottom;
+        }
+        &__img {
+            max-height: 100%;
+            max-width: 100%;
+            display: inline-block;
+        }
+    }
+    &-search {
+        height: 100%;
+        padding: rem(18px) rem(15px);
+        float: left;
+        line-height: 1; // ???
+        &:before {
+            // ???
+            height: 100%;
+            width: 0;
+            content: '';
+            display: inline-block;
+        }
+        &-input {
+            vertical-align: bottom;
+        }
+    }
+    &-nav {
+        float: left;
+        height: 100%;
+        &-list {
+            @extend %list;
+            height: 100%;
+        }
+        &-item {
+            display: block;
+            float: left;
+            height: 100%;
+            border-right: $border;
+            &:first-child {
+                border-left: $border;
+            }
+        }
+        &__link {
+            height: 100%;
+            color: black;
+            font-family: 'PlumbCondencedRegular';
+            text-transform: uppercase;
+            font-size: rem(15px);
+            display: block;
+            padding: rem(26px) rem(13px) rem(26px) rem(12px);
+            vertical-align: bottom;
+            letter-spacing: rem(3px);
+            &:before {
+                display: inline-block;
+                content: '';
+                height: 100%;
+                width: 0;
+            }
+        }
+    }
+    &-user {
+        float: left;
+        height: 100%;
+        padding-bottom: rem(19px);
+        margin-left: rem(14px);
+        margin-right: rem(2px);
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            width: 0;
+            vertical-align: bottom;
+        }
+    }
+    &-like {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: rem(26px);
+        &__counter {
+            color: white;
+            font-family: 'PlumbCondencedRegular';
+            font-size: rem(24px);
+            vertical-align: middle;
+        }
+        &__icon {
+            font-size: rem(26px);
+            vertical-align: middle;
+            margin-right: rem(1px);
+        }
+    }
+    &-auth {
+        display: inline-block;
+    }
+    &-dropdown {
+        &-list {
+            display: none;
+        }
+        &__btn {
+            border: none;
+            background: none;
+            font-size: rem(14px);
+            display: block;
+            width: 100%;
+            &-icon {
+                margin-right: rem(5px);
+                font-size: rem(11px);
+            }
+        }
+        margin-bottom: rem(8px);
+    }
+    &-login {
+        &__btn {
+            text-align: center;
+            background: none;
+            border: none;
+            font-family: 'PlumbCondencedRegular';
+            font-size: rem(15px);
+            letter-spacing: rem(3px);
+            padding-bottom: rem(2px);
+            &-icon {
+                fill: none;
+                stroke: black;
+                font-size: rem(30px);
+                margin-bottom: rem(2px);
+            }
+        }
+    }
 }

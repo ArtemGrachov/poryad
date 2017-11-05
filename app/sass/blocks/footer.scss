@@ -4,7 +4,6 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0 rem(30px);
     border-left: $border;
     border-right: $border;
     &-wrapper {
@@ -14,12 +13,11 @@
         height: rem(558px);
     }
     &-block {
-        margin-left: (30px);
-        padding-top: rem(160px);
-        outline: 1px dashed lime;
+        padding: rem(160px) rem(30px) 0;
         width: 100%;
+        border-left: $border;
         &:first-child {
-            margin-left: 0;
+            border-left: none;
         }
     }
 }

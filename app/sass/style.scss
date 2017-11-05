@@ -20,8 +20,9 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 rem(30px);
     width: $wrapper;
+    padding: 0 rem(30px);
+    border-bottom: $border; // ???
     border-left: $border;
     border-right: $border;
     @extend %clearfix;
