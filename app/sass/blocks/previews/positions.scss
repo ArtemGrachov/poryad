@@ -1,5 +1,67 @@
 .positions {
-    color: blue;
     float: right;
-    width: rem(825px);
+    width: rem(827px);
+    &-org {
+        margin-bottom: rem(10px);
+    }
+    &__sum {
+        margin-bottom: rem(15px);
+    }
+    &-list {
+        @extend %list;
+        margin: 0 rem(-15px);
+        font-size: 0;
+    }
+    &-item {
+        width: rem(255px);
+        display: inline-block;
+        margin: 0 rem(15px) rem(61px);
+        font-size: $html-font-size;
+    }
+    &-pic {
+        height: rem(255px);
+        overflow: hidden;
+        position: relative;
+        margin-bottom: rem(19px);
+    }
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    &-nav {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: none;
+        &__close {
+            background: none;
+            padding: 0;
+            border: none;
+            right: rem(10px);
+            top: rem(10px);
+            position: absolute;
+            font-size: rem(22px);
+        }
+        &__like {
+            padding: 0;
+            background: none;
+            border: none;
+            bottom: rem(1px);
+            left: 50%;
+            position: absolute;
+            font-size: rem(27px);
+            transform: translate(-50%, 0);
+        }
+        &__info {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &-details {
+        display: none;
+    }
 }

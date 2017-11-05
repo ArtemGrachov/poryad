@@ -22,7 +22,7 @@
     clear: both;
 }
 
-.header-nav-list, .filters-list, .filters-checkbox-list, .filters-tags-list, .filters-dropdown-list {
+.header-nav-list, .filters-list, .filters-checkbox-list, .filters-tags-list, .filters-dropdown-list, .positions-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -189,7 +189,7 @@ body {
 .wrapper {
     margin: 0 auto;
     width: 97.5rem;
-    padding: 3rem 2.33333rem;
+    padding: 3.08333rem 2.33333rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -221,6 +221,7 @@ body {
     letter-spacing: 0.2rem;
     padding: 0.83333rem 0.625rem 0.91667rem 1.08333rem;
     display: inline-block;
+    color: black;
 }
 
 .btn:hover, .filters-tags__checkbox + label:hover {
@@ -543,9 +544,83 @@ body {
 }
 
 .positions {
-    color: blue;
     float: right;
-    width: 68.75rem;
+    width: 68.91667rem;
+}
+
+.positions-org {
+    margin-bottom: 0.83333rem;
+}
+
+.positions__sum {
+    margin-bottom: 1.25rem;
+}
+
+.positions-list {
+    margin: 0 -1.25rem;
+    font-size: 0;
+}
+
+.positions-item {
+    width: 21.25rem;
+    display: inline-block;
+    margin: 0 1.25rem 5.08333rem;
+    font-size: 12px;
+}
+
+.positions-pic {
+    height: 21.25rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.58333rem;
+}
+
+.positions__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.positions-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.positions-nav__close {
+    background: none;
+    padding: 0;
+    border: none;
+    right: 0.83333rem;
+    top: 0.83333rem;
+    position: absolute;
+    font-size: 1.83333rem;
+}
+
+.positions-nav__like {
+    padding: 0;
+    background: none;
+    border: none;
+    bottom: 0.08333rem;
+    left: 50%;
+    position: absolute;
+    font-size: 2.25rem;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.positions-nav__info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.positions-details {
+    display: none;
 }
 
 .project {
