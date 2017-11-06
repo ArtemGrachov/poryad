@@ -17,6 +17,8 @@
         display: inline-block;
         margin: 0 rem(15px) rem(61px);
         font-size: $html-font-size;
+        vertical-align: top;
+        position: relative;
     }
     &-pic {
         height: rem(255px);
