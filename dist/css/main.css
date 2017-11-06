@@ -500,9 +500,32 @@ body {
 }
 
 .footer-block_right {
+    padding-left: 2.5rem;
+    padding-bottom: 14.16667rem;
     width: 34.16667rem;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    position: relative;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 3.83333rem;
+    right: 2.16667rem;
+    text-align: right;
+}
+
+.footer-copyright__img {
+    height: 6rem;
+    margin-bottom: 0.75rem;
+    margin-right: 0.16667rem;
+}
+
+.footer-copyright__text {
+    color: #525151;
+    font-size: 0.83333rem;
+    font-family: 'PlumbCondencedRegular';
+    letter-spacing: 0.16667rem;
 }
 
 .footer-socials-list {
@@ -549,7 +572,7 @@ body {
 }
 
 .previews {
-    padding: 3.08333rem 2.33333rem 1.41667rem;
+    padding: 3.08333rem 2.33333rem 1.58333rem;
 }
 
 .filters {

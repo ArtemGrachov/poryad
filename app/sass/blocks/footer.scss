@@ -29,8 +29,28 @@
             border-left: none;
         }
         &_right {
+            padding-left: rem(30px);
+            padding-bottom: rem(170px);
             width: rem(410px);
             flex-shrink: 0;
+            position: relative;
+        }
+    }
+    &-copyright {
+        position: absolute;
+        bottom: rem(46px);
+        right: rem(26px);
+        text-align: right;
+        &__img {
+            height: rem(72px);
+            margin-bottom: rem(9px);
+            margin-right: rem(2px);
+        }
+        &__text {
+            color: #525151;
+            font-size: rem(10px);
+            font-family: 'PlumbCondencedRegular';
+            letter-spacing: rem(2px);
         }
     }
     &-socials {
