@@ -6,6 +6,9 @@
     flex-direction: row;
     border-left: $border;
     border-right: $border;
+    font-family: 'PlumbCondencedRegular';
+    letter-spacing: rem(2.45px);
+    font-size: rem(12px);
     &-wrapper {
         width: 100%;
         background-image: url('../img/layout/footer.png');
@@ -13,11 +16,51 @@
         height: rem(558px);
     }
     &-block {
-        padding: rem(160px) rem(30px) 0;
+        &-el {
+            margin-bottom: rem(29px);
+        }
+        &-inner {
+            max-width: rem(256px);
+        }
+        padding: rem(160px) rem(28px) 0;
         width: 100%;
         border-left: $border;
         &:first-child {
             border-left: none;
         }
+        &_right {
+            width: rem(410px);
+            flex-shrink: 0;
+        }
+    }
+    &-socials {
+        &-list {
+            @extend %list;
+            margin-top: rem(26px);
+        }
+        &-item {
+            margin-bottom: rem(14px);
+        }
+        &__link {
+            color: black;
+        }
+        &__icon {
+            font-size: rem(26px);
+            vertical-align: middle;
+            margin-right: rem(18px);
+        }
+    }
+    &-input {
+        padding-top: rem(7px);
+        margin-top: rem(5px);
+        margin-bottom: rem(4px);
+    }
+    &-btn {
+        padding-top: rem(7px);
+        padding-left: rem(8px);
+        padding-bottom: rem(7px);
+    }
+    &-form__warning {
+        margin-top: rem(4px);
     }
 }

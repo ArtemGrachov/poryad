@@ -57,7 +57,7 @@ input[type="checkbox"] {
 }
 
 .form {
-    width: rem(256px);
+    margin-top: rem(4px);
     background: white;
     border: $border;
     .input {
@@ -76,6 +76,10 @@ input[type="checkbox"] {
     border: $border;
     padding: rem(9px) rem(9px) rem(7px);
     letter-spacing: rem(2.5px);
+    &+textarea {
+        height: rem(169px);
+        resize: none;
+    }
     &::placeholder {
         color: black;
     }
