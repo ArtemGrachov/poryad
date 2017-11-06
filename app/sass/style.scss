@@ -54,6 +54,7 @@ body {
     padding: rem(10px) rem(7.5px) rem(11px) rem(13px);
     display: inline-block;
     color: black;
+    cursor: pointer;
     &:hover {
         opacity: .8;
     }

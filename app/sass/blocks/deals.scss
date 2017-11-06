@@ -1,0 +1,14 @@
+.deals {
+    padding: rem(37px) rem(28px);
+    &-list {
+        margin-top: rem(6px);
+        margin-bottom: rem(3px);
+        @extend %list;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        vertical-align: top;
+        width: rem(162px);
+    }
+}

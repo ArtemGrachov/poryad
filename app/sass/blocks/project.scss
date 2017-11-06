@@ -1,13 +1,19 @@
 .project {
     display: flex;
+    padding-left: rem(28px);
+    padding-right: rem(30px);
     @extend %clearfix;
+    &-block {
+        padding-top: rem(39px);
+        padding-bottom: rem(48px);
+    }
     &-left {
-        width: rem(504px);
+        width: rem(445px);
         flex-shrink: 0;
-        padding: rem(39px) rem(31px) rem(30px) rem(28px);
     }
     &-desc {
-        padding: rem(39px) 0;
+        margin-left: rem(30px);
+        margin-right: rem(20px);
         &__header {
             margin-bottom: rem(30px);
         }
@@ -17,12 +23,12 @@
     }
     &-contacts {
         margin-left: rem(18px);
-        padding: rem(39px) rem(14px);
-        width: rem(299px);
+        width: rem(269px);
         flex-shrink: 0;
         border-left: $border;
         font-family: 'PlumbCondencedRegular';
         letter-spacing: rem(2.4px);
+        padding-left: rem(13px);
         &__header {
             margin-bottom: rem(15px);
         }
