@@ -2,15 +2,60 @@
     display: flex;
     @extend %clearfix;
     &-left {
-        width: rem(445px);
+        width: rem(504px);
         flex-shrink: 0;
+        padding: rem(39px) rem(31px) rem(30px) rem(28px);
     }
-    &-center {
-        margin: 0 rem(30px);
+    &-desc {
+        padding: rem(39px) 0;
+        &__header {
+            margin-bottom: rem(30px);
+        }
+        p {
+            margin-bottom: rem(30px);
+        }
     }
-    &-right {
-        width: rem(230px);
+    &-contacts {
+        margin-left: rem(18px);
+        padding: rem(39px) rem(14px);
+        width: rem(299px);
         flex-shrink: 0;
+        border-left: $border;
+        font-family: 'PlumbCondencedRegular';
+        letter-spacing: rem(2.4px);
+        &__header {
+            margin-bottom: rem(15px);
+        }
+        a {
+            color: black;
+        }
+        p {
+            margin-top: rem(10px);
+            margin-bottom: rem(16px);
+        }
+    }
+    &-socials {
+        &-list {
+            @extend %list;
+            padding: rem(1px) 0 0;
+        }
+        &-item {
+            display: inline-block;
+            margin-right: rem(12px);
+        }
+        &__link {
+            font-size: rem(25px);
+        }
+    }
+    &-location {
+        margin-top: rem(23px);
+        margin-bottom: rem(27px);
+        &__map {
+            margin-top: rem(6px);
+            width: rem(160px);
+            height: rem(160px);
+            border: 1px solid blue;
+        }
     }
     &-slider {
         height: rem(430px);

@@ -21,8 +21,7 @@ body {
 .wrapper {
     margin: 0 auto;
     width: $wrapper;
-    padding: rem(37px) rem(28px) rem(17px);
-    border-bottom: $border; // ???
+    border-bottom: $border;
     border-left: $border;
     border-right: $border;
     @extend %clearfix;

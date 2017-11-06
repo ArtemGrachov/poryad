@@ -22,7 +22,7 @@
     clear: both;
 }
 
-.slider-list, .header-nav-list, .filters-list, .filters-checkbox-list, .filters-tags-list, .filters-dropdown-list, .positions-list {
+.slider-list, .header-nav-list, .filters-list, .filters-checkbox-list, .filters-tags-list, .filters-dropdown-list, .positions-list, .project-socials-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -185,7 +185,6 @@ body {
 .wrapper {
     margin: 0 auto;
     width: 97.5rem;
-    padding: 3.08333rem 2.33333rem 1.41667rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -493,6 +492,10 @@ body {
     position: relative;
 }
 
+.previews {
+    padding: 3.08333rem 2.33333rem 1.41667rem;
+}
+
 .filters {
     width: 21.33333rem;
     float: left;
@@ -654,19 +657,71 @@ body {
 }
 
 .project-left {
-    width: 37.08333rem;
+    width: 42rem;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    padding: 3.25rem 2.58333rem 2.5rem 2.33333rem;
 }
 
-.project-center {
-    margin: 0 2.5rem;
+.project-desc {
+    padding: 3.25rem 0;
 }
 
-.project-right {
-    width: 19.16667rem;
+.project-desc__header {
+    margin-bottom: 2.5rem;
+}
+
+.project-desc p {
+    margin-bottom: 2.5rem;
+}
+
+.project-contacts {
+    margin-left: 1.5rem;
+    padding: 3.25rem 1.16667rem;
+    width: 24.91667rem;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'PlumbCondencedRegular';
+    letter-spacing: 0.2rem;
+}
+
+.project-contacts__header {
+    margin-bottom: 1.25rem;
+}
+
+.project-contacts a {
+    color: black;
+}
+
+.project-contacts p {
+    margin-top: 0.83333rem;
+    margin-bottom: 1.33333rem;
+}
+
+.project-socials-list {
+    padding: 0.08333rem 0 0;
+}
+
+.project-socials-item {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.project-socials__link {
+    font-size: 2.08333rem;
+}
+
+.project-location {
+    margin-top: 1.91667rem;
+    margin-bottom: 2.25rem;
+}
+
+.project-location__map {
+    margin-top: 0.5rem;
+    width: 13.33333rem;
+    height: 13.33333rem;
+    border: 1px solid blue;
 }
 
 .project-slider {

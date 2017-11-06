@@ -1,4 +1,4 @@
-.project
+.wrapper.project
     .project-left
         .slider.project-slider
             .slider-nav
@@ -14,24 +14,45 @@
                     img(src="./img/projects/sirius/slide1.jpg").project-slider__img
         .accent.project__price сума необмежена
         a(href="#").btn Допомогти
-    .project-center
-        .title Збираємо кошти на харчування тварин #Дай5!
-        .subtitle Притулок Сіріус
-        .project-desc
-            p Що можна купити на 5 гривень? Більше, ніж ти думаєш – цілий день ситого життя для одного безпритульного собаки! Ми знову запускаємо естафету #ДАЙ5 і закликаємо всіх підтримати понад дві тисячі вихованців найбільшого в Україні притулку для тварин "Сіріус"
-            p Поліпшити умови очікування справжнього дому просто: перераховуй 5 або більше гривень на картку притулку Приватбанк
-                br
-                span.accent 5169 3305 1043 1114, 
-                br
-                | Мезінова О. В. (директора притулку)
-                br
-                | або через сайт 
-                br
-                a(href="http://sheltersirius.org") http://sheltersirius.org
-                |  і передай естафету друзям.
-            p Також можна налаштувати регулярний платіж і годувати хвостів на постійній 
-                br
-                | основі. Як це зробити, дивись тут: 
-                br
-                a(href="нgoo.gl/cYzT3Y") нgoo.gl/cYzT3Y
-    .project-right Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo odio deleniti hic sit maxime asperiores fugiat saepe aut sed quaerat ut in magni nihil soluta quisquam, magnam, laudantium voluptates ad! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique rerum libero voluptas tempore, in sunt porro itaque veniam ex iure. Cum aspernatur eos fugiat iste doloribus ab soluta! Voluptatum, neque.
+    .project-desc
+        .project-desc__header
+            .title Збираємо кошти на харчування тварин #Дай5!
+            .subtitle Притулок Сіріус
+        p Що можна купити на 5 гривень? Більше, ніж ти думаєш – цілий день ситого життя для одного безпритульного собаки! Ми знову запускаємо естафету #ДАЙ5 і закликаємо всіх підтримати понад дві тисячі вихованців найбільшого в Україні притулку для тварин "Сіріус"
+        p Поліпшити умови очікування справжнього дому просто: перераховуй 5 або більше гривень на картку притулку Приватбанк
+            br
+            span.accent 5169 3305 1043 1114, 
+            br
+            | Мезінова О. В. (директора притулку)
+            br
+            | або через сайт 
+            br
+            a(href="http://sheltersirius.org") http://sheltersirius.org
+            |  і передай естафету друзям.
+        p Також можна налаштувати регулярний платіж і годувати хвостів на постійній 
+            br
+            | основі. Як це зробити, дивись тут: 
+            br
+            a(href="нgoo.gl/cYzT3Y") нgoo.gl/cYzT3Y
+    .project-contacts
+        .project-contacts__header
+            span.title Контакти 
+            span.subtitle Притулок Сіріус
+        p
+            a(href="tel:+380671234567") тел: 067 123 45 67
+        ul.project-socials-list
+            li.project-socials-item
+                a(href="#").project-socials__link
+                    +icon('fb','')
+            li.project-socials-item
+                a(href="#").project-socials__link
+                    +icon('vk','')
+        p
+            a(href="http://www.dogcat.com.ua") www.dogcat.com.ua
+        button(type="button").btn Написати нам
+        .project-location
+            | Україна, Київська область,
+            br
+            | село Федорівка
+            .project-location__map
+        a(href="#").title Переглянути інші проекти організації
