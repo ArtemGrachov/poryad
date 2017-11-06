@@ -29,16 +29,8 @@
     }
     &-search {
         height: 100%;
-        padding: rem(18px) rem(15px);
+        padding: rem(71px) rem(15px) 0;
         float: left;
-        line-height: 1; // ???
-        &:before {
-            // ???
-            height: 100%;
-            width: 0;
-            content: '';
-            display: inline-block;
-        }
         &-input {
             vertical-align: bottom;
         }
@@ -67,21 +59,15 @@
             font-size: rem(15px);
             display: block;
             padding: rem(26px) rem(13px) rem(26px) rem(12px);
-            vertical-align: bottom;
             letter-spacing: rem(3px);
-            &:before {
-                display: inline-block;
-                content: '';
-                height: 100%;
-                width: 0;
-            }
+            padding-top: rem(76px);
         }
     }
     &-user {
         float: left;
         height: 100%;
         padding-bottom: rem(19px);
-        margin-left: rem(14px);
+        margin-left: rem(11px);
         margin-right: rem(2px);
         &:before {
             content: '';

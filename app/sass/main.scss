@@ -26,6 +26,7 @@ $wrapper: rem(1170px);
 $transition: 200ms;
 @import './tags.scss';
 @import './style.scss';
+@import './elements/slider.scss';
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
 @import './blocks/slider-top.scss';

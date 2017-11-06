@@ -1,19 +1,46 @@
 .project {
-    outline: 1px solid blue;
     display: flex;
     @extend %clearfix;
     &-left {
-        outline: 1px solid red;
         width: rem(445px);
         flex-shrink: 0;
     }
     &-center {
-        outline: 1px solid green;
         margin: 0 rem(30px);
     }
     &-right {
-        outline: 1px solid lime;
-        width: rem(300px);
+        width: rem(230px);
         flex-shrink: 0;
+    }
+    &-slider {
+        height: rem(430px);
+        border: $border;
+        margin-bottom: rem(13px);
+        &__img {
+            max-height: 100%;
+            display: block;
+        }
+        &-logo {
+            width: rem(114px);
+            height: rem(114px);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            &__img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+            }
+        }
+        &-like {
+            position: absolute;
+            top: rem(16px);
+            right: rem(19px);
+            font-size: rem(26px);
+        }
+    }
+    &__price {
+        letter-spacing: rem(2.5px);
+        margin-bottom: rem(14px);
     }
 }

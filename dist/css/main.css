@@ -22,7 +22,7 @@
     clear: both;
 }
 
-.header-nav-list, .filters-list, .filters-checkbox-list, .filters-tags-list, .filters-dropdown-list, .positions-list {
+.slider-list, .header-nav-list, .filters-list, .filters-checkbox-list, .filters-tags-list, .filters-dropdown-list, .positions-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -126,10 +126,6 @@ input[type="checkbox"]:checked + label:before {
     color: black;
 }
 
-.input::-ms-input-placeholder {
-    color: black;
-}
-
 .input::placeholder {
     color: black;
 }
@@ -189,7 +185,7 @@ body {
 .wrapper {
     margin: 0 auto;
     width: 97.5rem;
-    padding: 3.08333rem 2.33333rem;
+    padding: 3.08333rem 2.33333rem 1.41667rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -199,18 +195,19 @@ body {
     font-family: 'PlumbCondencedRegular';
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin-bottom: 0.58333rem;
+}
+
+.title_bottom-margin {
+    margin-bottom: 0.66667rem;
 }
 
 .subtitle {
     font-family: 'PlumbCondencedRegular';
+    letter-spacing: 0.2rem;
 }
 
 .accent {
-    font-family: 'PlumbCondencedRegular';
     color: #bf303e;
-    font-size: 1.25rem;
-    letter-spacing: 0.25rem;
 }
 
 .btn, .filters-tags__checkbox + label {
@@ -260,6 +257,47 @@ body {
     height: 100%;
 }
 
+.slider {
+    position: relative;
+}
+
+.slider-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.slider-nav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-toggle {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.slider-toggle__left, .slider-toggle__right {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.slider-toggle__left {
+    float: left;
+}
+
+.slider-toggle__right {
+    float: right;
+}
+
 .header {
     height: 117px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -297,16 +335,8 @@ body {
 
 .header-search {
     height: 100%;
-    padding: 1.5rem 1.25rem;
+    padding: 5.91667rem 1.25rem 0;
     float: left;
-    line-height: 1;
-}
-
-.header-search:before {
-    height: 100%;
-    width: 0;
-    content: '';
-    display: inline-block;
 }
 
 .header-search-input {
@@ -341,22 +371,15 @@ body {
     font-size: 1.25rem;
     display: block;
     padding: 2.16667rem 1.08333rem 2.16667rem 1rem;
-    vertical-align: bottom;
     letter-spacing: 0.25rem;
-}
-
-.header-nav__link:before {
-    display: inline-block;
-    content: '';
-    height: 100%;
-    width: 0;
+    padding-top: 6.33333rem;
 }
 
 .header-user {
     float: left;
     height: 100%;
     padding-bottom: 1.58333rem;
-    margin-left: 1.16667rem;
+    margin-left: 0.91667rem;
     margin-right: 0.16667rem;
 }
 
@@ -481,6 +504,7 @@ body {
 
 .filters-checkbox {
     border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 0.58333rem;
 }
 
 .filters-checkbox-list {
@@ -545,7 +569,7 @@ body {
 
 .positions {
     float: right;
-    width: 68.91667rem;
+    width: 68.83333rem;
 }
 
 .positions-org {
@@ -557,7 +581,7 @@ body {
 }
 
 .positions-list {
-    margin: 0 -1.25rem;
+    margin: 0.58333rem -1.25rem 0;
     font-size: 0;
 }
 
@@ -624,27 +648,60 @@ body {
 }
 
 .project {
-    outline: 1px solid blue;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
 .project-left {
-    outline: 1px solid red;
     width: 37.08333rem;
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
 .project-center {
-    outline: 1px solid green;
     margin: 0 2.5rem;
 }
 
 .project-right {
-    outline: 1px solid lime;
-    width: 25rem;
+    width: 19.16667rem;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+}
+
+.project-slider {
+    height: 35.83333rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.08333rem;
+}
+
+.project-slider__img {
+    max-height: 100%;
+    display: block;
+}
+
+.project-slider-logo {
+    width: 9.5rem;
+    height: 9.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.project-slider-logo__img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.project-slider-like {
+    position: absolute;
+    top: 1.33333rem;
+    right: 1.58333rem;
+    font-size: 2.16667rem;
+}
+
+.project__price {
+    letter-spacing: 0.20833rem;
+    margin-bottom: 1.16667rem;
 }

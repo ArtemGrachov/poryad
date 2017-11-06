@@ -1,6 +1,6 @@
 .positions {
     float: right;
-    width: rem(827px);
+    width: rem(826px);
     &-org {
         margin-bottom: rem(10px);
     }
@@ -9,7 +9,7 @@
     }
     &-list {
         @extend %list;
-        margin: 0 rem(-15px);
+        margin: rem(7px) rem(-15px) 0;
         font-size: 0;
     }
     &-item {
