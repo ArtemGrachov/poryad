@@ -13,8 +13,6 @@
     src: url('../fonts/plumbcondensed-regular.otf');
 }
 
-@import './_misc/mixins.scss';
-$header-height: 117px;
 $border: 1px solid rgba(black,
 .2);
 $border-btn: 1px solid #bcbcbc;
@@ -22,8 +20,10 @@ $orange: #f7b132;
 $red: #bf303e;
 $grey: #9c9c9c;
 $html-font-size: 12px;
-$wrapper: rem(1170px);
+$header-height: 117px;
 $transition: 200ms;
+@import './_misc/mixins.scss';
+$wrapper: rem(1170px);
 @import './tags.scss';
 @import './style.scss';
 @import './elements/slider.scss';

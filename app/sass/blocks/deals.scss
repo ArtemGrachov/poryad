@@ -10,5 +10,6 @@
     &-item {
         vertical-align: top;
         width: rem(162px);
+        @extend %hover;
     }
 }

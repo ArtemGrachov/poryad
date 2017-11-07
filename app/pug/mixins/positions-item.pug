@@ -1,7 +1,7 @@
-mixin positions-item(title,org)
+mixin positions-item(title,org,imgUrl)
     li.positions-item
         .positions-pic
-            img(src="http://via.placeholder.com/255x255").positions__img
+            img(src=imgUrl).positions__img
             .positions-nav
                 button(type="button").positions-nav__close
                     +icon('cross','positions-nav__close-icon')

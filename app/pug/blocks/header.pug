@@ -14,7 +14,8 @@ header.header
                         a(href="#").header-nav__link #{nav}
         .header-user
             .header-like
-                +icon('heart','header-like__icon')
+                button(type="button").btn-icon.header-like__btn
+                    +icon('heart','')
                 span.header-like__counter 2
             .header-auth
                 .header-lang
