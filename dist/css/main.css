@@ -285,27 +285,7 @@ button {
     display: block;
 }
 
-.slider {
-    position: relative;
-}
-
-.slider-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-}
-
 .slider-nav {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.slider-toggle {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -313,16 +293,16 @@ button {
     transform: translateY(-50%);
 }
 
-.slider-toggle__left, .slider-toggle__right {
+.slider-toggle__prev, .slider-toggle__next {
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
-.slider-toggle__left {
+.slider-toggle__prev {
     float: left;
 }
 
-.slider-toggle__right {
+.slider-toggle__next {
     float: right;
 }
 
@@ -331,9 +311,15 @@ button {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 2.5rem 0 2.41667rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.header-wrapper {
     width: 97.5rem;
     margin: 0 auto;
-    padding: 0 2.5rem 0 2.41667rem;
 }
 
 .header-right {
@@ -590,38 +576,19 @@ button {
     margin-top: 0.5rem;
 }
 
-.slider-top {
-    height: 100%;
-}
-
 .slider-top-wrapper {
-    background: #f7b132;
-    height: 100vh;
-    margin-top: -117px;
-    padding-top: 117px;
-    z-index: -1;
-    position: relative;
-}
-
-.slider-top-list {
-    height: 100%;
-    width: 97.5rem;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-}
-
-.slider-top-list:before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    height: 150px;
-    background: white;
-    display: block;
-    content: '';
-    z-index: -1;
+}
+
+.slider-top .slider-item {
+    background: #f7b132;
+    padding-top: 117px;
+    height: 100vh;
+}
+
+.slider-top-item-wrapper {
+    width: 97.5rem;
+    margin: 0 auto;
 }
 
 .previews {
