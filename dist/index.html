@@ -13,9 +13,9 @@
     <header class="header">
         <div class="header-logo"><img class="header-logo__img" src="./img/logo.png"></div>
         <div class="header-right">
-            <div class="header-search">
+            <form class="header-search">
                 <div class="input-group header-search-input"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__button" type="submit"><svg class="icon input-group__icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></div>
-            </div>
+            </form>
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
@@ -93,8 +93,7 @@
                     </ul>
                 </div>
                 <div class="filters-item">
-                    <div class="dropdown filters-dropdown"><button class="dropdown__btn filters-dropdown__btn" type="button">Впорядкувати</button><svg class="icon dropdown__btn-icon filters-dropdown__icon"><use xlink:href="img/sprite.svg#more"></use></svg>
-                        <div class="filters-dropdown__current">Останні додані</div>
+                    <div class="dropdown filters-dropdown"><button class="dropdown__btn filters-dropdown__btn" type="button">Впорядкувати<svg class="icon dropdown__btn-icon filters-dropdown__icon"><use xlink:href="img/sprite.svg#more"></use></svg>Останні додані</button>
                         <ul class="dropdown-list filters-dropdown-list">
                             <li class="dropdown-item filters-dropdown-item"><a class="dropdown__link filters-dropdown__link" href="#">Останні додані</a></li>
                             <li class="dropdown-item filters-dropdown-item"><a class="dropdown__link filters-dropdown__link" href="#">Найпопулярніші</a></li>
@@ -182,6 +181,17 @@
                         <div class="accent positions__sum">сума необмежена</div><a class="btn" href="#">Допомогти</a></div>
                 </li>
             </ul>
+            <div class="positions-more">
+                <div class="positions-more__icon"></div>
+                <div class="positions-more__text">Показати більше позицій</div>
+                <div class="positions-more__icon">
+                    <div class="positions-more__icon-point"></div>
+                    <div class="positions-more__icon-point active"></div>
+                    <div class="positions-more__icon-point"></div>
+                    <div class="positions-more__icon-point"></div>
+                    <div class="positions-more__icon-point"></div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="wrapper project">

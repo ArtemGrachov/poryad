@@ -877,6 +877,34 @@ button {
     display: none;
 }
 
+.positions-more {
+    width: 21.25rem;
+    text-align: center;
+}
+
+.positions-more__icon-point {
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    display: inline-block;
+    background: #eaeaea;
+    border: 0.08333rem solid #ababab;
+    margin: 0 0.75rem;
+}
+
+.positions-more__icon-point.active {
+    background: black;
+    border-color: black;
+}
+
+.positions-more__text {
+    font-size: 1rem;
+    font-family: 'PlumbCondencedRegular';
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2.08333rem;
+}
+
 .project {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -63,4 +63,30 @@
     &-details {
         display: none;
     }
+    &-more {
+        width: rem(255px);
+        text-align: center;
+        &__icon {
+            &-point {
+                border-radius: 50%;
+                height: rem(15px);
+                width: rem(15px);
+                display: inline-block;
+                background: #eaeaea;
+                border: rem(1px) solid #ababab;
+                margin: 0 rem(9px);
+                &.active {
+                    background: black;
+                    border-color: black;
+                }
+            }
+        }
+        &__text {
+            font-size: rem(12px);
+            font-family: 'PlumbCondencedRegular';
+            letter-spacing: rem(2.4px);
+            text-transform: uppercase;
+            margin-bottom: rem(25px);
+        }
+    }
 }
