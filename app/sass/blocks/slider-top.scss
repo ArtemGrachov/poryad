@@ -37,7 +37,7 @@
                 background: rgba(black, .2); // ???
                 position: absolute;
                 top: 0;
-                z-index: 9999;
+                z-index: 5;
             }
             &:before {
                 left: 0;
@@ -47,9 +47,25 @@
             }
         }
     }
-    &__header {
+    &-header {
         position: absolute;
-        top: 350px;
-        left: 10px;
+        z-index: 5;
+        top: rem(127px);
+        left: rem(69px);
+        width: rem(260px);
+    }
+    &__title {
+        color: white;
+        font-family: 'PlumbCondencedBlack';
+        font-size: rem(36px);
+        text-transform: uppercase;
+        letter-spacing: rem(7.5px);
+        line-height: 1.2;
+        margin-bottom: rem(13px);
+    }
+    &__subtitle {
+        font-size: rem(15px);
+        font-family: 'PlumbCondencedRegular';
+        letter-spacing: rem(3.05px);
     }
 }

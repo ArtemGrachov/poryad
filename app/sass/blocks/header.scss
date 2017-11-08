@@ -63,6 +63,12 @@
             padding: rem(26px) rem(13px) rem(26px) rem(12px);
             letter-spacing: rem(3px);
             padding-top: rem(76px);
+            &:hover,
+            &.active {
+                background: white;
+                opacity: 1;
+                box-shadow: rem(5px) rem(5px) rem(15px) 0 rgba(black, .15);
+            }
         }
     }
     &-user {
@@ -99,9 +105,6 @@
         display: inline-block;
     }
     &-dropdown {
-        &-list {
-            display: none;
-        }
         &__btn {
             border: none;
             background: none;
@@ -113,7 +116,17 @@
                 font-size: rem(11px);
             }
         }
+        &.active {
+            .header-dropdown__btn-icon {
+                transform: rotate(-90deg);
+            }
+        }
         margin-bottom: rem(8px);
+        &__link {
+            padding: rem(3px) rem(15px);
+            color: white;
+            font-weight: bold;
+        }
     }
     &-login {
         &__btn {
