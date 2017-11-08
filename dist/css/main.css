@@ -285,6 +285,10 @@ button {
     display: block;
 }
 
+.slider {
+    position: relative;
+}
+
 .slider-nav {
     position: absolute;
     top: 50%;
