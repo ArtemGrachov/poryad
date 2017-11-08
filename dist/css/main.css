@@ -209,6 +209,11 @@ button {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.wrapper-top {
+    height: 100vh;
+    outline: 1px dashed lime;
+}
+
 .title {
     font-family: 'PlumbCondencedRegular';
     text-transform: uppercase;
@@ -289,10 +294,10 @@ button {
     position: relative;
 }
 
-.slider-nav {
+.slider-toggle {
     position: absolute;
-    top: 50%;
     width: 100%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -316,14 +321,10 @@ button {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 2.5rem 0 2.41667rem;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-
-.header-wrapper {
-    width: 97.5rem;
     margin: 0 auto;
+    width: 97.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .header-right {
@@ -580,19 +581,68 @@ button {
     margin-top: 0.5rem;
 }
 
-.slider-top-wrapper {
+.slider-top {
+    position: absolute;
+    height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
-.slider-top .slider-item {
-    background: #f7b132;
-    padding-top: 117px;
+.slider-top-wrapper {
     height: 100vh;
+    margin-top: -117px;
+    position: relative;
 }
 
 .slider-top-item-wrapper {
     width: 97.5rem;
     margin: 0 auto;
+}
+
+.slider-top .slider-item {
+    background: #f7b132;
+    height: 100vh;
+    padding-top: 117px;
+}
+
+.slider-top-above {
+    position: absolute;
+    padding-top: 117px;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-top-above-wrapper {
+    width: 97.5rem;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.slider-top-above-wrapper:before, .slider-top-above-wrapper:after {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+
+.slider-top-above-wrapper:before {
+    left: 0;
+}
+
+.slider-top-above-wrapper:after {
+    right: 0;
+}
+
+.slider-top__header {
+    position: absolute;
+    top: 350px;
+    left: 10px;
 }
 
 .previews {

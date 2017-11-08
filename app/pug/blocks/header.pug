@@ -1,37 +1,36 @@
-.header-wrapper
-    header.header
-        .header-logo
-            img(src="./img/logo.png").header-logo__img
-        .header-right
-            .header-search
-                .input-group.header-search-input
-                    input(type="text" placeholder="Назва проекта").input.input-group__input
-                    button(type="submit").input-group__button
-                        +icon('search','input-group__icon')
-            nav.header-nav
-                ul.header-nav-list
-                    each nav in ['Волонтерство','Підбір проекта','Стан проектів','Новини']
-                        li.header-nav-item
-                            a(href="#").header-nav__link #{nav}
-            .header-user
-                .header-like
-                    button(type="button").btn-icon.header-like__btn
-                        +icon('heart','')
-                    span.header-like__counter 2
-                .header-auth
-                    .header-lang
-                        .dropdown.header-dropdown
-                            button(type="button").dropdown__btn.header-dropdown__btn
-                                +icon('triangle','header-dropdown__btn-icon')
-                                | УК
-                            ul.dropdown-list.header-dropdown-list
-                                li.dropdown-item.header-dropdown-item
-                                    a.dropdown__link.header-dropdown__link(href="#") УК
-                                li.dropdown-item.header-dropdown-item
-                                    a.dropdown__link.header-dropdown__link(href="#") ENG
-                                li.dropdown-item.header-dropdown-item
-                                    a.dropdown__link.header-dropdown__link(href="#") РУС
-                    .header-login
-                        button(type="button").header-login__btn
-                            +icon('login','header-login__btn-icon')
-                            .header-login__btn-text УВІЙТИ
+header.header
+    .header-logo
+        img(src="./img/logo.png").header-logo__img
+    .header-right
+        .header-search
+            .input-group.header-search-input
+                input(type="text" placeholder="Назва проекта").input.input-group__input
+                button(type="submit").input-group__button
+                    +icon('search','input-group__icon')
+        nav.header-nav
+            ul.header-nav-list
+                each nav in ['Волонтерство','Підбір проекта','Стан проектів','Новини']
+                    li.header-nav-item
+                        a(href="#").header-nav__link #{nav}
+        .header-user
+            .header-like
+                button(type="button").btn-icon.header-like__btn
+                    +icon('heart','')
+                span.header-like__counter 2
+            .header-auth
+                .header-lang
+                    .dropdown.header-dropdown
+                        button(type="button").dropdown__btn.header-dropdown__btn
+                            +icon('triangle','header-dropdown__btn-icon')
+                            | УК
+                        ul.dropdown-list.header-dropdown-list
+                            li.dropdown-item.header-dropdown-item
+                                a.dropdown__link.header-dropdown__link(href="#") УК
+                            li.dropdown-item.header-dropdown-item
+                                a.dropdown__link.header-dropdown__link(href="#") ENG
+                            li.dropdown-item.header-dropdown-item
+                                a.dropdown__link.header-dropdown__link(href="#") РУС
+                .header-login
+                    button(type="button").header-login__btn
+                        +icon('login','header-login__btn-icon')
+                        .header-login__btn-text УВІЙТИ

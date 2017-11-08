@@ -10,41 +10,42 @@
 </head>
 
 <body>
-    <div class="header-wrapper">
-        <header class="header">
-            <div class="header-logo"><img class="header-logo__img" src="./img/logo.png"></div>
-            <div class="header-right">
-                <div class="header-search">
-                    <div class="input-group header-search-input"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__button" type="submit"><svg class="icon input-group__icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></div>
-                </div>
-                <nav class="header-nav">
-                    <ul class="header-nav-list">
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Підбір проекта</a></li>
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Стан проектів</a></li>
-                        <li class="header-nav-item"><a class="header-nav__link" href="#">Новини</a></li>
-                    </ul>
-                </nav>
-                <div class="header-user">
-                    <div class="header-like"><button class="btn-icon header-like__btn" type="button"><svg class="icon "><use xlink:href="img/sprite.svg#heart"></use></svg></button><span class="header-like__counter">2</span></div>
-                    <div class="header-auth">
-                        <div class="header-lang">
-                            <div class="dropdown header-dropdown"><button class="dropdown__btn header-dropdown__btn" type="button"><svg class="icon header-dropdown__btn-icon"><use xlink:href="img/sprite.svg#triangle"></use></svg>УК</button>
-                                <ul class="dropdown-list header-dropdown-list">
-                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">УК</a></li>
-                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">ENG</a></li>
-                                    <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">РУС</a></li>
-                                </ul>
-                            </div>
+    <header class="header">
+        <div class="header-logo"><img class="header-logo__img" src="./img/logo.png"></div>
+        <div class="header-right">
+            <div class="header-search">
+                <div class="input-group header-search-input"><input class="input input-group__input" type="text" placeholder="Назва проекта"><button class="input-group__button" type="submit"><svg class="icon input-group__icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></div>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Волонтерство</a></li>
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Підбір проекта</a></li>
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Стан проектів</a></li>
+                    <li class="header-nav-item"><a class="header-nav__link" href="#">Новини</a></li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <div class="header-like"><button class="btn-icon header-like__btn" type="button"><svg class="icon "><use xlink:href="img/sprite.svg#heart"></use></svg></button><span class="header-like__counter">2</span></div>
+                <div class="header-auth">
+                    <div class="header-lang">
+                        <div class="dropdown header-dropdown"><button class="dropdown__btn header-dropdown__btn" type="button"><svg class="icon header-dropdown__btn-icon"><use xlink:href="img/sprite.svg#triangle"></use></svg>УК</button>
+                            <ul class="dropdown-list header-dropdown-list">
+                                <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">УК</a></li>
+                                <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">ENG</a></li>
+                                <li class="dropdown-item header-dropdown-item"><a class="dropdown__link header-dropdown__link" href="#">РУС</a></li>
+                            </ul>
                         </div>
-                        <div class="header-login"><button class="header-login__btn" type="button"><svg class="icon header-login__btn-icon"><use xlink:href="img/sprite.svg#login"></use></svg><div class="header-login__btn-text">УВІЙТИ</div></button></div>
                     </div>
+                    <div class="header-login"><button class="header-login__btn" type="button"><svg class="icon header-login__btn-icon"><use xlink:href="img/sprite.svg#login"></use></svg><div class="header-login__btn-text">УВІЙТИ</div></button></div>
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <div class="slider-top-wrapper">
         <div class="slider slider-top">
+            <div class="slider-top-above">
+                <div class="slider-top-above-wrapper"></div>
+            </div>
             <ul class="slider-list">
                 <li class="slider-item">
                     <div class="slider-top-item-wrapper">
@@ -62,7 +63,9 @@
                     </div>
                 </li>
             </ul>
-            <div class="slider-nav"><a class="slider-toggle__prev btn-square" href="#">PREV</a><a class="slider-toggle__next btn-square" href="#">NEXT</a></div>
+            <div class="slider-nav">
+                <div class="slider-toggle"><a class="slider-toggle__prev btn-square" href="#">PREV</a><a class="slider-toggle__next btn-square" href="#">NEXT</a></div>
+            </div>
         </div>
     </div>
     <div class="wrapper previews">
@@ -195,8 +198,8 @@
                         <div class="slider-top-item-wrapper"><img class="project-slider__img" src="http://lorempixel.com/445/430/cats"></div>
                     </li>
                 </ul>
-                <div class="slider-nav"><a class="slider-toggle__prev btn-square" href="#">PREV</a><a class="slider-toggle__next btn-square" href="#">NEXT</a></div>
-                <div class="project-slider-btns">
+                <div class="slider-nav">
+                    <div class="slider-toggle"><a class="slider-toggle__prev btn-square" href="#">PREV</a><a class="slider-toggle__next btn-square" href="#">NEXT</a></div>
                     <div class="project-slider-logo"><img class="project-slider-logo__img" src="./img/projects/sirius/logo.png"></div>
                     <div class="project-slider-like"><button class="btn-icon" type="button"><svg class="icon project-slider-like__icon"><use xlink:href="img/sprite.svg#heart"></use></svg></button></div>
                 </div>

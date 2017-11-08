@@ -1,14 +1,55 @@
 .slider-top {
     &-wrapper {
-        width: 100%;
-    }
-    .slider-item {
-        background: $orange;
-        padding-top: $header-height;
         height: 100vh;
+        margin-top: -$header-height;
+        position: relative;
     }
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     &-item-wrapper {
         width: $wrapper;
         margin: 0 auto;
+    }
+    .slider-item {
+        background: $orange;
+        height: 100vh;
+        padding-top: $header-height;
+    }
+    &-above {
+        position: absolute;
+        padding-top: $header-height;
+        width: 100%;
+        height: 100%;
+        &-wrapper {
+            width: $wrapper;
+            margin: 0 auto;
+            position: relative;
+            height: 100%;
+            &:before,
+            &:after {
+                display: block;
+                content: '';
+                height: 100%;
+                width: 1px;
+                background: rgba(black, .2); // ???
+                position: absolute;
+                top: 0;
+                z-index: 9999;
+            }
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+        }
+    }
+    &__header {
+        position: absolute;
+        top: 350px;
+        left: 10px;
     }
 }

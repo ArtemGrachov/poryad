@@ -29,6 +29,10 @@ button {
     border-left: $border;
     border-right: $border;
     @extend %clearfix;
+    &-top {
+        height: 100vh;
+        outline: 1px dashed lime;
+    }
 }
 
 .title {
