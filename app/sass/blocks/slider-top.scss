@@ -98,7 +98,6 @@
             font-family: 'PlumbCondencedRegular';
             font-size: rem(15px);
             letter-spacing: rem(3.05px);
-            line-height: 2.9;
             vertical-align: middle;
         }
         &-1 {
@@ -119,6 +118,7 @@
                 &__text {
                     left: rem(544px);
                     top: rem(116px);
+                    line-height: 2.9;
                 }
             }
         }
@@ -126,7 +126,7 @@
             background: #5ca5a5;
             .slider-top-slide {
                 &__char {
-                    left: rem(449px);
+                    left: rem(450px);
                     top: rem(75px);
                 }
                 &__cloud {
@@ -136,6 +136,26 @@
                 &__shadow {
                     left: rem(420px);
                     top: rem(398px);
+                }
+                &__text {
+                    left: rem(659px);
+                    top: rem(44px);
+                    line-height: 2.4;
+                }
+            }
+            &__bottom {
+                margin-left: rem(144px);
+            }
+            &__bird {
+                &-large {
+                    position: absolute;
+                    left: rem(239px);
+                    top: rem(11px);
+                }
+                &-small {
+                    position: absolute;
+                    left: rem(214px);
+                    top: rem(99px);
                 }
             }
         }

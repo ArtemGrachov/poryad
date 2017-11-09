@@ -757,7 +757,6 @@ button {
     font-family: 'PlumbCondencedRegular';
     font-size: 1.25rem;
     letter-spacing: 0.25417rem;
-    line-height: 2.9;
     vertical-align: middle;
 }
 
@@ -783,6 +782,7 @@ button {
 .slider-top-slide-1 .slider-top-slide__text {
     left: 45.33333rem;
     top: 9.66667rem;
+    line-height: 2.9;
 }
 
 .slider-top-slide-2 {
@@ -790,7 +790,7 @@ button {
 }
 
 .slider-top-slide-2 .slider-top-slide__char {
-    left: 37.41667rem;
+    left: 37.5rem;
     top: 6.25rem;
 }
 
@@ -802,6 +802,28 @@ button {
 .slider-top-slide-2 .slider-top-slide__shadow {
     left: 35rem;
     top: 33.16667rem;
+}
+
+.slider-top-slide-2 .slider-top-slide__text {
+    left: 54.91667rem;
+    top: 3.66667rem;
+    line-height: 2.4;
+}
+
+.slider-top-slide-2__bottom {
+    margin-left: 12rem;
+}
+
+.slider-top-slide-2__bird-large {
+    position: absolute;
+    left: 19.91667rem;
+    top: 0.91667rem;
+}
+
+.slider-top-slide-2__bird-small {
+    position: absolute;
+    left: 17.83333rem;
+    top: 8.25rem;
 }
 
 .previews {
