@@ -1,11 +1,11 @@
 .project {
     display: flex;
-    padding-left: rem(28px);
+    padding-left: rem(29px);
     padding-right: rem(30px);
     @extend %clearfix;
     &-block {
         padding-top: rem(39px);
-        padding-bottom: rem(48px);
+        padding-bottom: rem(46px);
     }
     &-left {
         width: rem(445px);
@@ -22,7 +22,7 @@
         }
     }
     &-contacts {
-        margin-left: rem(18px);
+        margin-left: rem(19px);
         width: rem(269px);
         flex-shrink: 0;
         border-left: $border;

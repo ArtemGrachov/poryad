@@ -16,17 +16,11 @@
         float: left;
         height: 100%;
         overflow: hidden;
-        &:before {
-            display: inline-block;
-            content: '';
-            height: 100%;
-            width: 0;
-            vertical-align: bottom;
-        }
+        padding-top: rem(10px);
         &__img {
             max-height: 100%;
             max-width: 100%;
-            display: inline-block;
+            display: block;
         }
     }
     &-search {
@@ -105,7 +99,9 @@
         display: inline-block;
     }
     &-dropdown {
+        margin-bottom: rem(10px);
         &__btn {
+            padding-right: rem(3px);
             border: none;
             background: none;
             font-size: rem(14px);
@@ -121,7 +117,6 @@
                 transform: rotate(-90deg);
             }
         }
-        margin-bottom: rem(8px);
         &__link {
             padding: rem(3px) rem(15px);
             color: white;
