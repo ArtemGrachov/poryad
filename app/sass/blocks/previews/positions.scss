@@ -15,22 +15,54 @@ $pos-mar-bottom: 61px;
     }
     &-item {
         width: rem(255px);
+        min-height: rem(10px);
         display: inline-block;
         margin: 0 rem(15px) $pos-mar-bottom;
         font-size: $html-font-size;
         vertical-align: top;
         position: relative;
-        @extend %hover;
+    }
+    &-wrap {
+        background: white;
+        &:hover,
+        &.active {
+            width: rem(275px);
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            left: rem(-10px);
+            .positions {
+                &-details,
+                &-nav {
+                    display: block;
+                }
+                &-desc {
+                    border-left: $border;
+                    border-right: $border;
+                    border-bottom: $border;
+                    padding: rem(19px) rem(9px) rem(20px);
+                }
+            }
+        }
+        &.active {
+            z-index: 9;
+        }
+    }
+    &-desc {
+        padding: rem(19px) 0 0;
     }
     &-pic {
         height: rem(255px);
         overflow: hidden;
         position: relative;
-        margin-bottom: rem(19px);
         border: $border;
     }
     &__img {
         display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     &-nav {
         position: absolute;

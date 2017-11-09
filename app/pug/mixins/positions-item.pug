@@ -1,15 +1,17 @@
 mixin positions-item(title,org,imgUrl)
     li.positions-item
-        .positions-pic
-            img(src=imgUrl).positions__img
-            .positions-nav
-                button(type="button").positions-nav__close
-                    +icon('cross','positions-nav__close-icon')
-                a(href="#").btn-square.positions-nav__info INFO
-                button(type="button").positions-nav__like
-                    +icon('heart','positions-nav__like-icon')
-        .positions-title #{title}
-        .positions-org #{org}
-        .positions-details
-            .accent.positions__sum сума необмежена
-            a(href="#").btn Допомогти
+        .positions-wrap
+            .positions-pic
+                img(src=imgUrl).positions__img
+                .positions-nav
+                    button(type="button").positions-nav__close
+                        +icon('cross','positions-nav__close-icon')
+                    a(href="#").btn-square.positions-nav__info INFO
+                    button(type="button").positions-nav__like
+                        +icon('heart','positions-nav__like-icon')
+            .positions-desc
+                .positions-title #{title}
+                .positions-org #{org}
+                .positions-details
+                    .accent.positions__sum сума необмежена
+                    a(href="#").btn Допомогти

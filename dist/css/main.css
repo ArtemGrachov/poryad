@@ -28,13 +28,13 @@
     margin: 0;
 }
 
-.positions-item, .deals-item {
+.deals-item {
     cursor: pointer;
     -webkit-transition: 200ms;
     transition: 200ms;
 }
 
-.positions-item:hover, .deals-item:hover {
+.deals-item:hover {
     opacity: .8;
 }
 
@@ -229,8 +229,14 @@ button {
     letter-spacing: 0.2rem;
 }
 
-.accent {
+.red, .accent {
     color: #bf303e;
+}
+
+.accent {
+    font-family: 'PlumbCondencedRegular';
+    letter-spacing: 0.2rem;
+    font-size: 1.25rem;
 }
 
 .btn, .filters-tags__checkbox + label {
@@ -925,6 +931,7 @@ button {
 
 .positions-item {
     width: 21.25rem;
+    min-height: 0.83333rem;
     display: inline-block;
     margin: 0 1.25rem 61px;
     font-size: 12px;
@@ -932,16 +939,51 @@ button {
     position: relative;
 }
 
+.positions-wrap {
+    background: white;
+}
+
+.positions-wrap:hover, .positions-wrap.active {
+    width: 22.91667rem;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: -0.83333rem;
+}
+
+.positions-wrap:hover .positions-details, .positions-wrap:hover .positions-nav, .positions-wrap.active .positions-details, .positions-wrap.active .positions-nav {
+    display: block;
+}
+
+.positions-wrap:hover .positions-desc, .positions-wrap.active .positions-desc {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1.58333rem 0.75rem 1.66667rem;
+}
+
+.positions-wrap.active {
+    z-index: 9;
+}
+
+.positions-desc {
+    padding: 1.58333rem 0 0;
+}
+
 .positions-pic {
     height: 21.25rem;
     overflow: hidden;
     position: relative;
-    margin-bottom: 1.58333rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .positions__img {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .positions-nav {
