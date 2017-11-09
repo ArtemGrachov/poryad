@@ -12,44 +12,15 @@
     &-item-wrapper {
         width: $wrapper;
         margin: 0 auto;
+        position: relative;
     }
     .slider-item {
-        background: $orange;
         height: 100vh;
         padding-top: $header-height;
     }
-    &-above {
-        position: absolute;
-        padding-top: $header-height;
-        width: 100%;
-        height: 100%;
-        &-wrapper {
-            width: $wrapper;
-            margin: 0 auto;
-            position: relative;
-            height: 100%;
-            &:before,
-            &:after {
-                display: block;
-                content: '';
-                height: 100%;
-                width: 1px;
-                background: rgba(black, .2); // ???
-                position: absolute;
-                top: 0;
-                z-index: 5;
-            }
-            &:before {
-                left: 0;
-            }
-            &:after {
-                right: 0;
-            }
-        }
-    }
     &-header {
         position: absolute;
-        z-index: 5;
+        z-index: 3;
         top: rem(127px);
         left: rem(69px);
         width: rem(260px);
@@ -67,5 +38,106 @@
         font-size: rem(15px);
         font-family: 'PlumbCondencedRegular';
         letter-spacing: rem(3.05px);
+    }
+    &__logo {
+        position: absolute;
+        left: rem(626px);
+        top: rem(154px);
+        z-index: 3;
+    }
+    &-above {
+        width: $wrapper;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        padding-top: $header-height;
+        transform: translateX(-50%);
+        top: 0;
+        z-index: 5;
+        pointer-events: none;
+        &-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-left: $border;
+            border-right: $border;
+            border-bottom: $border;
+        }
+    }
+    &-title {
+        position: absolute;
+        left: rem(68px);
+        top: rem(127px);
+        &__text {
+            font-family: 'PlumbCondencedBlack';
+            color: white;
+            font-size: rem(36px);
+            text-transform: uppercase;
+            letter-spacing: rem(7.3px);
+            line-height: 1.2;
+            width: rem(255px);
+            margin-bottom: rem(14px);
+        }
+        &__subtitle {
+            font-size: rem(15px);
+            font-family: 'PlumbCondencedRegular';
+            letter-spacing: rem(3px);
+        }
+    }
+    &__logo {
+        position: absolute;
+        left: rem(625px);
+        top: rem(154px);
+    }
+    &-slide {
+        &__char,
+        &__cloud,
+        &__shadow,
+        &__text {
+            position: absolute;
+            font-family: 'PlumbCondencedRegular';
+            font-size: rem(15px);
+            letter-spacing: rem(3.05px);
+            line-height: 2.9;
+            vertical-align: middle;
+        }
+        &-1 {
+            background: $orange;
+            .slider-top-slide {
+                &__char {
+                    left: rem(440px);
+                    top: rem(210px);
+                }
+                &__cloud {
+                    left: rem(404px);
+                    top: rem(25px);
+                }
+                &__shadow {
+                    left: rem(401px);
+                    top: rem(394px);
+                }
+                &__text {
+                    left: rem(544px);
+                    top: rem(116px);
+                }
+            }
+        }
+        &-2 {
+            background: #5ca5a5;
+            .slider-top-slide {
+                &__char {
+                    left: rem(449px);
+                    top: rem(75px);
+                }
+                &__cloud {
+                    left: rem(445px);
+                    top: 0;
+                }
+                &__shadow {
+                    left: rem(420px);
+                    top: rem(398px);
+                }
+            }
+        }
     }
 }

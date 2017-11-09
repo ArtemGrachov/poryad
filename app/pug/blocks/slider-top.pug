@@ -1,17 +1,33 @@
 .slider-top-wrapper
     .slider.slider-top
         .slider-top-above
-            .slider-top-above-wrapper
-                .slider-top-header
-                    .slider-top__title Найбільша в Україні біржа добра
-                    .slider-top__subtitle допомагати просто
+            .slider-top-above-inner
+                .slider-top-title
+                    .slider-top-title__text Найбільша в Україні біржа добра
+                    .slider-top-title__subtitle допомагати просто
+                .slider-top__logo
+                    img(src="./img/slider-top/logo_min.png")
         ul.slider-list
-            li.slider-item
+            li.slider-item.slider-top-slide-1 
+                .slider-top-item-wrapper     
+                    .slider-top-slide__cloud
+                        img(src="./img/slider-top/slide1/cloud.png")
+                    .slider-top-slide__shadow     
+                        img(src="./img/slider-top/slide1/shadow.png")
+                    .slider-top-slide__char
+                        img(src="./img/slider-top/slide1/character.png")
+                    .slider-top-slide__text
+                        | ...що, що? кажеш друг тобі потрібен?
+                        br
+                        | так я ж
+            li.slider-item.slider-top-slide-2
                 .slider-top-item-wrapper
-                    h1 slide #1
-            li.slider-item
-                .slider-top-item-wrapper                
-                    h1 slide #2
+                    .slider-top-slide__cloud
+                        img(src="./img/slider-top/slide2/cloud.png")
+                    .slider-top-slide__shadow     
+                        img(src="./img/slider-top/slide2/shadow.png")
+                    .slider-top-slide__char
+                        img(src="./img/slider-top/slide2/character.png")
         .slider-nav
             .slider-toggle
                 a(href="#").slider-toggle__prev.btn-square PREV
