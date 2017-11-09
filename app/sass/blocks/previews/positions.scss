@@ -120,10 +120,8 @@ $pos-mar-bottom: 61px;
             }
         }
         &__text {
+            @extend %title;
             font-size: rem(12px);
-            font-family: 'PlumbCondencedRegular';
-            letter-spacing: rem(2.4px);
-            text-transform: uppercase;
             margin-bottom: rem(25px);
             margin-top: rem(43px);
         }

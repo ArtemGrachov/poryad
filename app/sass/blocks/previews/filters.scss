@@ -48,19 +48,10 @@
         &__btn {
             border: none;
             background: none;
-            font-family: 'PlumbCondencedRegular';
-            text-transform: uppercase;
-            letter-spacing: rem(2.4px);
             padding: 0 rem(1px);
             vertical-align: middle;
             margin-right: rem(6px);
-        }
-        &__current {
-            display: inline-block;
-            font-family: 'PlumbCondencedRegular';
-            text-transform: uppercase;
-            letter-spacing: rem(2.4px);
-            vertical-align: middle;
+            @extend %title;
         }
         &__icon {
             font-size: rem(22px);

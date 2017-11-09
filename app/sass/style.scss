@@ -29,16 +29,10 @@ button {
     border-left: $border;
     border-right: $border;
     @extend %clearfix;
-    &-top {
-        height: 100vh;
-        outline: 1px dashed lime;
-    }
 }
 
 .title {
-    font-family: 'PlumbCondencedRegular';
-    text-transform: uppercase;
-    letter-spacing: rem(2.4px);
+    @extend %title;
     &_bottom-margin {
         margin-bottom: rem(8px);
     }
@@ -53,19 +47,20 @@ button {
     color: $red;
 }
 
-.accent {
-    @extend .red;
+%title {
     font-family: 'PlumbCondencedRegular';
     letter-spacing: rem(2.4px);
-    font-size: rem(15px);
+    text-transform: uppercase;
+}
+
+.accent {
+    @extend .red;
 }
 
 .btn {
     border: $border;
-    font-family: 'PlumbCondencedRegular';
+    @extend %title;
     background: none;
-    text-transform: uppercase;
-    letter-spacing: rem(2.4px);
     padding: rem(10px) rem(7.5px) rem(9px) rem(13px);
     display: inline-block;
     color: black;

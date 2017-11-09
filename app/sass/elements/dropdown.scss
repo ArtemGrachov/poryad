@@ -9,9 +9,7 @@
         border-bottom: rem(2px) solid black;
     }
     &__link {
-        text-transform: uppercase;
-        font-family: 'PlumbCondencedRegular';
-        letter-spacing: rem(2.4px);
+        @extend %title;
         color: white;
         display: block;
         padding: rem(15px) rem(10px);
