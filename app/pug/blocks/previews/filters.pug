@@ -4,9 +4,10 @@ aside.filters
         +filters-tags([{id:'Animals',name:'Притулки для тварин'},{id:'Education',name:'Освіта'},{id:'Invalids',name:'Інваліди'},{id:'Refugees',name:'Переселенці зони АТО'},{id:'Military',name:'Військові'},{id:'Pensioners',name:'Літні люди'},{id:'Children',name:'Діти'}])
         .filters-item
             .dropdown.filters-dropdown
-                button(type="button").dropdown__btn.filters-dropdown__btn Впорядкувати
+                button(type="button").dropdown__btn.filters-dropdown__btn
+                    span.dropdown__label Впорядкувати
                     +icon('more','dropdown__btn-icon filters-dropdown__icon')
-                    | Останні додані
+                    span.dropdown__current Останні додані
                 ul.dropdown-list.filters-dropdown-list
                     each sort in ['Останні додані','Найпопулярніші','За алфавітом']
                         li.dropdown-item.filters-dropdown-item

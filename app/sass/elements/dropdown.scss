@@ -22,8 +22,13 @@
             opacity: 1;
         }
     }
-    &__btn-icon {
-        transition: $transition;
+    &__btn {
+        &-icon {
+            transition: $transition;
+        }
+        * {
+            pointer-events: none;
+        }
     }
     &.active {
         .dropdown {
