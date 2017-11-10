@@ -48,14 +48,12 @@
             }
         }
         &__link {
+            @extend %title;
             height: 100%;
             color: black;
-            font-family: 'PlumbCondencedRegular';
-            text-transform: uppercase;
             font-size: rem(15px);
             display: block;
             padding: rem(26px) rem(13px) rem(26px) rem(12px);
-            letter-spacing: rem(3px);
             padding-top: rem(76px);
             &:hover,
             &.active {
@@ -106,6 +104,7 @@
             border: none;
             background: none;
             font-size: rem(14px);
+            text-align: center;
             &-icon {
                 margin-right: rem(5px);
                 font-size: rem(11px);
@@ -127,10 +126,9 @@
             text-align: center;
             background: none;
             border: none;
-            font-family: 'PlumbCondencedRegular';
             font-size: rem(15px);
-            letter-spacing: rem(3px);
             padding-bottom: rem(2px);
+            @extend %title;
             &-icon {
                 fill: none;
                 stroke: black;

@@ -1,6 +1,7 @@
 mixin deals-item(title,imgUrl)
     li.deals-item
-        .deals__pic
-            img(src=imgUrl).deals__img
-        .deals__title
-           | #{title}
+        a(href="#" target="_blank").deals__link
+            .deals__pic
+                img(src=imgUrl).deals__img
+            .deals__title
+                | #{title}

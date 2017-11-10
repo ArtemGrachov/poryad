@@ -25,10 +25,8 @@ a {
 input[type="checkbox"] {
     display: none;
     &+label {
+        @extend %title;
         display: block;
-        font-family: 'PlumbCondencedRegular';
-        text-transform: uppercase;
-        letter-spacing: rem(2.45px);
         color: $grey;
         margin-bottom: rem(21px);
         transition: $transition;

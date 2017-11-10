@@ -180,9 +180,7 @@
         left: 50%;
         transform: translateX(-50%);
         display: block;
-        font-family: 'PlumbCondencedRegular';
-        text-transform: uppercase;
-        letter-spacing: rem(3.05px);
+        @extend %title;
         font-size: rem(15px);
         color: black;
         background: url('../img/icons/arrow-down.png');

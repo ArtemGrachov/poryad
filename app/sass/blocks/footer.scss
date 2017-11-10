@@ -49,8 +49,7 @@
         &__text {
             color: #525151;
             font-size: rem(10px);
-            font-family: 'PlumbCondencedRegular';
-            letter-spacing: rem(2px);
+            @extend %title;
         }
     }
     &-socials {

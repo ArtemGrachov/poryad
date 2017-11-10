@@ -12,4 +12,8 @@
         width: rem(162px);
         @extend %hover;
     }
+    &__link {
+        display: block;
+        color: black;
+    }
 }
