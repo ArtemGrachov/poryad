@@ -21,17 +21,17 @@ $pos-mar-bottom: 61px;
         font-size: $html-font-size;
         vertical-align: top;
         position: relative;
-    }
-    &-wrap {
-        background: white;
         &:hover,
         &.active {
-            width: rem(275px);
-            z-index: 10;
-            position: absolute;
-            top: 0;
-            left: rem(-10px);
             .positions {
+                &-wrap {
+                    width: rem(275px);
+                    z-index: 10;
+                    position: absolute;
+                    top: 0;
+                    left: rem(-10px);
+                    box-shadow: rem(10px) rem(10px) rem(20px) 0 rgba(black, .2);
+                }
                 &-details,
                 &-nav {
                     display: block;
@@ -47,6 +47,9 @@ $pos-mar-bottom: 61px;
         &.active {
             z-index: 9;
         }
+    }
+    &-wrap {
+        background: white;
     }
     &-desc {
         padding: rem(19px) 0 0;

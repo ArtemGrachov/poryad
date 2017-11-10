@@ -56,6 +56,8 @@
         &__icon {
             font-size: rem(22px);
             vertical-align: middle;
+            margin-left: rem(7px);
+            margin-right: rem(4px);
         }
         &-list {
             @extend %list;
