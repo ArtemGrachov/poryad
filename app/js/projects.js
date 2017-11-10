@@ -1,7 +1,7 @@
 const projectsData = {
     'sirius1': {
         slider: {
-            imgUrls: ['./img/projects/sirius/slide1.png', 'http://lorempixel.com/445/430/animals', 'http://lorempixel.com/445/430/cats'],
+            imgUrls: ['./img/projects/sirius/slide1.png', 'https://dummyimage.com/445x430/000000/ffffff.jpg&text=sirius+slide2', 'https://dummyimage.com/445x430/000000/ffffff.jpg&text=sirius+slide3'],
             logo: './img/projects/sirius/logo.png'
         },
         price: 0,
@@ -29,7 +29,7 @@ const projectsData = {
     },
     'sirius2': {
         slider: {
-            imgUrls: ['http://lorempixel.com/445/430/animals', 'http://lorempixel.com/445/430/animals', 'http://lorempixel.com/445/430/cats'],
+            imgUrls: ['https://dummyimage.com/445x430/ffffff/000000.jpg&text=sirius+slide1', 'https://dummyimage.com/445x430/ffffff/000000.jpg&text=sirius+slide2', 'https://dummyimage.com/445x430/ffffff/000000.jpg&text=sirius+slide3'],
             logo: './img/projects/sirius/logo.png'
         },
         price: 0,
@@ -57,8 +57,8 @@ const projectsData = {
     },
     'ameda': {
         slider: {
-            imgUrls: ['http://lorempixel.com/445/430/animals', 'http://lorempixel.com/445/430/animals', 'http://lorempixel.com/445/430/cats'],
-            logo: './img/projects/sirius/logo.png'
+            imgUrls: ['https://dummyimage.com/445x430/b1d400/000000.jpg&text=ameda+slide1', 'https://dummyimage.com/445x430/ffffff/b1d400.jpg&text=ameda+slide2', 'https://dummyimage.com/445x430/ffffff/b1d400.jpg&text=ameda+slide3'],
+            logo: 'https://dummyimage.com/445x430/ffffff/000000.jpg&text=ameda+logo'
         },
         price: 2500,
         title: 'Потрібні кошти на лікування Шарика',
@@ -112,11 +112,16 @@ const selectProject = function (id) {
         .text(project.contacts.site.text)
         .attr('href', project.contacts.site.url);
     $('#projectAddress')
-        .text(project.contacts.map.address)
-    $('#projectSlider')
-        .empty();
+        .text(project.contacts.map.address);
+    $('#projectLogo')
+        .attr('src', project.slider.logo)
+    const sliderList = $('#projectSlider')
+        .find('.slider-list')
+
+    sliderList.slick('removeSlide', null, null, true);
+
     for (let url of project.slider.imgUrls) {
-        $('#projectSlider')
-            .append(`<li class="slider-item"><img class="project-slider__img" src="${url}"></li>`)
+        sliderList
+            .slick('slickAdd', `<li class="slider-item"><img class="project-slider__img" src="${url}"></li>`)
     }
 }
