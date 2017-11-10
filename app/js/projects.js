@@ -58,7 +58,7 @@ const projectsData = {
     'ameda': {
         slider: {
             imgUrls: ['https://dummyimage.com/445x430/b1d400/000000.jpg&text=ameda+slide1', 'https://dummyimage.com/445x430/ffffff/b1d400.jpg&text=ameda+slide2', 'https://dummyimage.com/445x430/ffffff/b1d400.jpg&text=ameda+slide3'],
-            logo: 'https://dummyimage.com/445x430/ffffff/000000.jpg&text=ameda+logo'
+            logo: 'https://dummyimage.com/114x114/000000/ffffff&text=ameda+logo'
         },
         price: 2500,
         title: 'Потрібні кошти на лікування Шарика',
@@ -77,8 +77,8 @@ const projectsData = {
             map: {
                 address: 'Україна, м. Київ',
                 location: {
-                    lat: 50.878862,
-                    lng: 30.268079
+                    lat: 50.449443,
+                    lng: 30.524381
                 }
             }
         }
@@ -116,12 +116,17 @@ const selectProject = function (id) {
     $('#projectLogo')
         .attr('src', project.slider.logo)
     const sliderList = $('#projectSlider')
-        .find('.slider-list')
+        .find('.slider-list');
 
     sliderList.slick('removeSlide', null, null, true);
 
     for (let url of project.slider.imgUrls) {
         sliderList
-            .slick('slickAdd', `<li class="slider-item"><img class="project-slider__img" src="${url}"></li>`)
-    }
+            .slick('slickAdd', `<li class="slider-item"><img class="project-slider__img" src="${url}"></li>`);
+    };
+
+    map.map.setCenter(project.contacts.map.location);
+    map.marker.setPosition(project.contacts.map.location);
+
+    scrollTo('project');
 }

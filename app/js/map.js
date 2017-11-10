@@ -19,4 +19,8 @@ const map = function () {
         position: center
     });
     marker.setMap(map);
+    return {
+        map: map,
+        marker: marker
+    };
 }

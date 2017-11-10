@@ -1,6 +1,6 @@
-const scrollToPositions = function () {
+const scrollTo = function (id) {
     $('html,body').animate({
-        scrollTop: $('#previews')
+        scrollTop: $('#' + id)
             .offset()
             .top
     }, 1000)
