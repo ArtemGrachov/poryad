@@ -5,7 +5,7 @@
     @extend %clearfix;
     &-block {
         padding-top: rem(39px);
-        padding-bottom: rem(46px);
+        padding-bottom: rem(50px);
     }
     &-left {
         width: rem(445px);
@@ -18,7 +18,7 @@
             margin-bottom: rem(30px);
         }
         p {
-            margin-bottom: rem(30px);
+            margin-bottom: rem(31px);
         }
     }
     &-contacts {
@@ -56,10 +56,11 @@
     &-location {
         margin-top: rem(23px);
         margin-bottom: rem(27px);
+        width: rem(165px);
         &__map {
             margin-top: rem(6px);
-            width: rem(160px);
             height: rem(160px);
+            width: rem(162px);
         }
     }
     &-slider {

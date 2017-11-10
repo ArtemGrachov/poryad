@@ -3,4 +3,5 @@ $(document).ready(function () {
     dropdown();
     positions();
     map();
+    projectSelector();
 })

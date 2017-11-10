@@ -3,7 +3,7 @@ const map = function () {
         lat: 50.878862,
         lng: 30.268079
     }
-    const map = new google.maps.Map(document.getElementById('map'), {
+    const map = new google.maps.Map(document.getElementById('projectMap'), {
         center: center,
         zoom: 11,
         styles: [{

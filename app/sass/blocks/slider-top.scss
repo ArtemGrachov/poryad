@@ -170,8 +170,7 @@
         z-index: 3;
         background: url('../img/layout/header.svg');
         background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center bottom;
+        background-position: right bottom;
         height: 100%;
         pointer-events: none;
     }
@@ -190,5 +189,6 @@
         background-repeat: no-repeat;
         background-position: center bottom;
         padding-bottom: rem(34px);
+        z-index: 4;
     }
 }

@@ -21,11 +21,17 @@
         }
     }
     &__btn {
+        display: block;
+        text-align: left;
+        width: 100%;
         &-icon {
             transition: $transition;
         }
         * {
             pointer-events: none;
+        }
+        &:focus {
+            outline: none;
         }
     }
     &.active {
