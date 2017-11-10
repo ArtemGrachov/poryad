@@ -165,9 +165,12 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        z-index: 4;
-        &__img {
-            display: block;
-        }
+        z-index: 3;
+        background: url('../img/layout/header.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center bottom;
+        height: 100%;
+        pointer-events: none;
     }
 }
