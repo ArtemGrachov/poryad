@@ -1,6 +1,7 @@
 .slider-top {
     &-wrapper {
         height: 100vh;
+        min-height: rem(732px);
         margin-top: -$header-height;
         position: relative;
     }
@@ -15,8 +16,9 @@
         position: relative;
     }
     .slider-item {
-        height: 100vh;
         padding-top: $header-height;
+        height: 100vh;
+        min-height: rem(732px);
     }
     &-header {
         position: absolute;
@@ -172,5 +174,21 @@
         background-position: center bottom;
         height: 100%;
         pointer-events: none;
+    }
+    &-scroll {
+        position: absolute;
+        bottom: rem(154px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        font-family: 'PlumbCondencedRegular';
+        text-transform: uppercase;
+        letter-spacing: rem(3.05px);
+        font-size: rem(15px);
+        color: black;
+        background: url('../img/icons/arrow-down.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: rem(34px);
     }
 }
