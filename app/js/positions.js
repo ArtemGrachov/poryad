@@ -1,17 +1,10 @@
 const positions = function () {
-    $('.positions-nav__close').on('click', function () {
-        $(this)
-            .closest('.positions-item')
-            .removeClass('active');
-    })
-    $('.positions-item').on('click', function () {
+    $('.positions-item').on('click', function (e) {
         const $this = $(this);
-        if (!$this.hasClass('active')) {
-            $this
-                .toggleClass('active');
-            $this
-                .siblings()
-                .removeClass('active');
-        }
+        $this
+            .toggleClass('active');
+        $this
+            .siblings()
+            .removeClass('active');
     })
 }
