@@ -21,8 +21,12 @@ $pos-mar-bottom: 61px;
         font-size: $html-font-size;
         vertical-align: top;
         position: relative;
-        &:hover,
+        @extend %hover;
         &.active {
+            &:hover {
+                opacity: 1;
+            }
+            z-index: 9;
             .positions {
                 &-wrap {
                     width: rem(275px);
@@ -43,9 +47,6 @@ $pos-mar-bottom: 61px;
                     padding: rem(19px) rem(9px) rem(20px);
                 }
             }
-        }
-        &.active {
-            z-index: 9;
         }
     }
     &-wrap {

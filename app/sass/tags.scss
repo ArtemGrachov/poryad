@@ -22,6 +22,17 @@ a {
     }
 }
 
+button,
+input[type="button"],
+input[type="submit"] {
+    * {
+        pointer-events: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
 .checkbox {
     display: none;
     &+label {

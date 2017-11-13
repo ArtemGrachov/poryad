@@ -27,12 +27,6 @@
         &-icon {
             transition: $transition;
         }
-        * {
-            pointer-events: none;
-        }
-        &:focus {
-            outline: none;
-        }
     }
     &.active {
         .dropdown {
