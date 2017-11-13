@@ -119,11 +119,12 @@ const selectProject = function (id) {
         .find('.slider-list');
 
     sliderList.slick('removeSlide', null, null, true);
-
+    let sliderStr = '';
     for (let url of project.slider.imgUrls) {
-        sliderList
-            .slick('slickAdd', `<li class="slider-item"><img class="project-slider__img" src="${url}"></li>`);
+        sliderStr += `<li class="slider-item"><img class="project-slider__img" src="${url}"></li>`;
     };
+    sliderList
+        .slick('slickAdd', sliderStr);
 
     map.map.setCenter(project.contacts.map.location);
     map.marker.setPosition(project.contacts.map.location);

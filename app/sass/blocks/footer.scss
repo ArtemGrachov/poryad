@@ -9,6 +9,9 @@
     font-family: 'PlumbCondencedRegular';
     letter-spacing: rem(2.45px);
     font-size: rem(12px);
+    a {
+        color: black;
+    }
     &-wrapper {
         width: 100%;
         background-image: url('../img/layout/footer.png');

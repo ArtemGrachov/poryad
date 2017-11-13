@@ -33,6 +33,12 @@ input[type="submit"] {
     }
 }
 
+input {
+    &:focus {
+        outline-color: white;
+    }
+}
+
 .checkbox {
     display: none;
     &+label {
