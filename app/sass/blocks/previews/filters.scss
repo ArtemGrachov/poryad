@@ -14,7 +14,7 @@
     &-checkbox {
         &-list {
             padding-top: rem(30px);
-            padding-bottom: rem(7px);
+            padding-bottom: rem(8px);
             @extend %list;
         }
     }
@@ -29,10 +29,12 @@
             margin-bottom: rem(9px);
         }
         &__checkbox {
+            display: none;
             &+label {
                 @extend .btn;
                 margin-bottom: 0 !important; // ???
                 padding-bottom: rem(9px);
+                padding-right: rem(9px);
                 &:before {
                     display: none !important; // ???
                 }

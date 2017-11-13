@@ -5,7 +5,7 @@
     @extend %clearfix;
     &-block {
         padding-top: rem(39px);
-        padding-bottom: rem(50px);
+        padding-bottom: rem(45px);
     }
     &-left {
         width: rem(445px);
@@ -26,9 +26,8 @@
         width: rem(269px);
         flex-shrink: 0;
         border-left: $border;
-        font-family: 'PlumbCondencedRegular';
-        letter-spacing: rem(2.4px);
         padding-left: rem(14px);
+        @extend .subtitle;
         &__header {
             margin-bottom: rem(15px);
         }
@@ -66,7 +65,7 @@
     &-slider {
         height: rem(430px);
         border: $border;
-        margin-bottom: rem(13px);
+        margin-bottom: rem(14px);
         &__img {
             max-height: 100%;
             max-width: 100%;
@@ -91,8 +90,8 @@
             font-size: rem(26px);
         }
     }
-    &__price {
-        letter-spacing: rem(2.5px);
-        margin-bottom: rem(14px);
+    &__sum {
+        font-size: rem(14px);
+        margin-bottom: rem(15px);
     }
 }

@@ -32,14 +32,14 @@
         font-family: 'PlumbCondencedBlack';
         font-size: rem(36px);
         text-transform: uppercase;
-        letter-spacing: rem(7.5px);
+        letter-spacing: .2em;
         line-height: 1.2;
         margin-bottom: rem(13px);
     }
     &__subtitle {
         font-size: rem(15px);
         font-family: 'PlumbCondencedRegular';
-        letter-spacing: rem(3.05px);
+        letter-spacing: .2em;
     }
     &__logo {
         position: absolute;
@@ -75,7 +75,7 @@
             color: white;
             font-size: rem(36px);
             text-transform: uppercase;
-            letter-spacing: rem(7.3px);
+            letter-spacing: .2em;
             line-height: 1.2;
             width: rem(255px);
             margin-bottom: rem(14px);
@@ -83,7 +83,7 @@
         &__subtitle {
             font-size: rem(15px);
             font-family: 'PlumbCondencedRegular';
-            letter-spacing: rem(3px);
+            letter-spacing: .2em;
         }
     }
     &__logo {

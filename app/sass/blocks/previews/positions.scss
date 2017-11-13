@@ -129,4 +129,8 @@ $pos-mar-bottom: 61px;
             margin-top: rem(43px);
         }
     }
+    &__sum {
+        @extend .accent;
+        font-size: rem(15px);
+    }
 }

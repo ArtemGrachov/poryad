@@ -40,7 +40,7 @@ button {
 
 .subtitle {
     font-family: 'PlumbCondencedRegular';
-    letter-spacing: rem(2.4px);
+    letter-spacing: .2em;
 }
 
 .red {
@@ -55,13 +55,14 @@ button {
 
 .accent {
     @extend .red;
+    @extend .subtitle;
 }
 
 .btn {
     border: $border;
     @extend %title;
     background: none;
-    padding: rem(10px) rem(7.5px) rem(9px) rem(13px);
+    padding: rem(10px) rem(7px) rem(9px) rem(13px);
     display: inline-block;
     color: black;
     cursor: pointer;

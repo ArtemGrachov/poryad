@@ -6,5 +6,5 @@ mixin filters-item(title, button, prefix, list)
             ul.filters-checkbox-list
                 each checkbox in list
                     li.filters-checkbox-item
-                        input(type="checkbox" id=prefix + checkbox.id)
+                        input(type="checkbox" id=prefix + checkbox.id).checkbox
                         label(for=prefix + checkbox.id) #{checkbox.text}

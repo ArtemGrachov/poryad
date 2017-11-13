@@ -22,7 +22,7 @@ a {
     }
 }
 
-input[type="checkbox"] {
+.checkbox {
     display: none;
     &+label {
         @extend %title;
@@ -66,12 +66,11 @@ input[type="checkbox"] {
 }
 
 .input {
-    font-family: 'PlumbCondencedRegular';
+    @extend .subtitle;
     background: none;
     width: rem(160px);
     border: $border;
     padding: rem(9px) rem(9px) rem(7px);
-    letter-spacing: rem(2.5px);
     &+textarea {
         height: rem(169px);
         resize: none;
@@ -89,7 +88,6 @@ input[type="checkbox"] {
             text-transform: uppercase;
             padding: rem(5px) rem(10px);
             font-size: rem(15px);
-            letter-spacing: rem(3px);
             width: rem(172px);
         }
         &__button {
