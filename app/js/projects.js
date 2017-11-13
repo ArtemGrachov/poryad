@@ -128,5 +128,5 @@ const selectProject = function (id) {
     map.map.setCenter(project.contacts.map.location);
     map.marker.setPosition(project.contacts.map.location);
 
-    scrollTo('project');
+    scrollToBlock('project');
 }
